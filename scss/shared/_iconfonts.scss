@@ -1,0 +1,201 @@
+//* change this when we change the actual font */
+$version : 030217;
+
+$fonturl : '/_layouts/15/1033/styles/mymacys/fonts/';
+
+@font-face {
+	font-family: 'macys-tile';
+	src:url($fonturl+'macys-tile.eot?#{$version}');
+	src:url($fonturl+'macys-tile.eot?#{$version}') format('embedded-opentype'),
+		url($fonturl+'macys-tile.woff?#{$version}') format('woff'),
+		url($fonturl+'macys-tile.ttf?#{$version}') format('truetype'),
+		url($fonturl+'macys-tile.svg?#{$version}') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="macys-icon-"], [class*=" macys-icon-"],
+[class^="mymacys-icon-"], [class*=" mymacys-icon-"],
+[class^="macys-tile-icon-"], [class*=" macys-tile-icon-"] {
+  //* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'macys-tile',serif !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	//* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin icon ($code) {
+	$withslash: "\"\\\"";
+	$withslash : str-insert($withslash, $code, 3);
+	content: unquote($withslash);
+}
+
+// Each entry has the e-value, and an array of Names that match the e-value
+$icons: ( "macys", "e001", ("News","Podcast")), 			( "macys", "e002", ("Centers","Stack")),
+				( "macys", "e003", ("People","Users")), 			( "macys", "e004", "Search"),
+				( "macys", "e02a", ("Favorites","Bookmark","Favorite")), ( "macys", "e006", ("Portal","Globe")),
+				( "macys", "e008", ("Menu","List")), 					( "macys", "e009", ("Social","Chat")),
+				( "macys", "e007", ("Down","Caret-Down")), 		( "macys", "f04b", "Play"),
+				( "macys", "e00e", "Left"), 									( "macys", "e00f", "Up"),
+				( "macys", "e010", "Right"), 									( "macys", "e602", "Initiatives"),
+				( "macys", "e012", "Star"), 									( "macys", "e600", "Home"),
+				( "macys", "e601", "Location"), 							( "macys", "e603", "Bloomingdales"),
+				( "macys", "e604", ("Loyalty","Dog")),
+
+				( "macys-tile", "e000", "Office"), 			( "macys-tile", "e00a", "Image"),
+				( "macys-tile", "e00b", "Play"), 				( "macys-tile", "e009", "Bullhorn"),
+				( "macys-tile", "e00d", "Books"), 			( "macys-tile", "e00c", "Profile"),
+				( "macys-tile", "e013", "Folder"), 			( "macys-tile", "e014", "Tag"),
+				( "macys-tile", "e015", "Cart"), 				( "macys-tile", "e016", "Phone"),
+				( "macys-tile", "e017", "Calculate"), 	( "macys-tile", "e018", "Alarm"),
+				( "macys-tile", "e018", "Bubbles"), 		( "macys-tile", "e01a", "Users"),
+				( "macys-tile", "e01b", "Binoculars"), 	( "macys-tile", "e01c", "Key"),
+				( "macys-tile", "e020", "Bug"), 				( "macys-tile", "e021", "Pie"),
+				( "macys-tile", "e023", "Trophy"), 			( "macys-tile", "e024", "Leaf"),
+				( "macys-tile", "e025", "Fire"), 				( "macys-tile", "e026", "Airplane"),
+				( "macys-tile", "e027", "Truck"), 			( "macys-tile", "e028", "Tree"),
+				( "macys-tile", "e029", "Attachment"), 	( "macys-tile", "e02a", "Bookmark"),
+				( "macys-tile", "e02e", "Table"),				( "macys-tile", "e600", "Home"),
+				( "macys-tile", "e60a", "Padlock"), 		( "macys-tile", "e62b", "Cogs"),
+				( "macys-tile", "e60d", "Pencil"), 			( "macys-tile", "e603", "Envelop"),
+				( "macys-tile", "e603", "Envelope"),
+				( "macys-tile", "e605", "Download"), 			( "macys-tile", "e608", "Meter"),
+				( "macys-tile", "e609", "Shield"), 				( "macys-tile", "e60f", "Link"),
+				( "macys-tile", "e610", "Heart"), 					( "macys-tile", "e61e", "Film"),
+				( "macys-tile", "e61f", "Audio"), 					( "macys-tile", "e60b", "Shirt"),
+				( "macys-tile", "e628", "Trumpet"), 				( "macys-tile", "e60c", "Database"),
+				( "macys-tile", "e62c", "Tools"), 					( "macys-tile", "e611", "Puzzle"),
+				( "macys-tile", "e633", "Bag"), 						( "macys-tile", "e636", "Training"),
+				( "macys-tile", "e637", "Book"), 					( "macys-tile", "e63b", "Help"),
+				( "macys-tile", "e63d", "Barchart"), 			( "macys-tile", "e63f", "Iphone"),
+				( "macys-tile", "e640", "Desktop"), 				( "macys-tile", "e643", "Phonebook"),
+				( "macys-tile", "e642", "Mobile"), 				( "macys-tile", "e60e", "Linechart"),
+				( "macys-tile", "e613", "Dollar"), 				( "macys-tile", "e614", "Food"),
+				( "macys-tile", "e615", "Gift"), 					( "macys-tile", "e618", "Apple"),
+				( "macys-tile", "e61a", "Android"),	 			( "macys-tile", "e61c", "Windows"),
+				( "macys-tile", "e617", "Unix"), 					( "macys-tile", "e616", "Legal"),
+				( "macys-tile", "e619", "Question"), 			( "macys-tile", "e61d", "Exclamation"),
+				( "macys-tile", "e620", "Checkmark"), 			( "macys-tile", "e623", "Creditcard"),
+				( "macys-tile", "e61b", "Tablet"), 				( "macys-tile", "e629", "Calendar"),
+				( "macys-tile", "e62d", "Dollarbill"), 		( "macys-tile", "e62e", "Ticket"),
+				( "macys-tile", "e000", "Building"), 			( "macys-tile", "e00a", "Image"),
+				( "macys-tile", "e00b", "Play"), 					( "macys-tile", "e00c", "Announce"),
+				( "macys-tile", "e00d", "Books"), 					( "macys-tile", "e011", "Page"),
+				( "macys-tile", "e013", "Folder"), 				( "macys-tile", "e014", "Tag"),
+				( "macys-tile", "e015", "Cart"), 					( "macys-tile", "e016", "Phone"),
+				( "macys-tile", "e017", "Calc"), 					( "macys-tile", "e018", "Alarm"),
+				( "macys-tile", "e019", "Chat"), 					( "macys-tile", "e003", "People"),
+				( "macys-tile", "e01b", "Find"), 					( "macys-tile", "e01c", "Key"),
+				( "macys-tile", "e020", "Bug"), 						( "macys-tile", "e021", "Piechart"),
+				( "macys-tile", "e023", "Award"), 					( "macys-tile", "e024", "Leaf"),
+				( "macys-tile", "e025", "Fire"), 					( "macys-tile", "e026", "Airplane"),
+				( "macys-tile", "e027", "Truck"), 					( "macys-tile", "e028", "Org"),
+				( "macys-tile", "e600", "Home"), 					( "macys-tile", "e60a", "Lock"),
+				( "macys-tile", "e60d", "Pencil"), 				( "macys-tile", "e612", "Email"),
+
+				( "macys-tile", "e607", "Earth"), 				( "macys-tile", "e614", "Thumbsup"),
+				( "macys-tile", "f011", "Textfile"), 				( "macys-tile", "e61b", "Thumbsdown"),
+				( "macys-tile", "e997", "Wand"), 				( "macys-tile", "e9b8", "Clipboard"),
+				( "macys-tile", "e9c3", "Cloud"), 			( "macys-tile", "e62b", "Settings"),
+				( "macys-tile", "e900", "Cabinet"), 			( "macys-tile", "e902", "Cancel"),
+        ( "macys-tile", "e624", "Microphone"), 			( "macys-tile", "e625", "Clock"),
+        ( "macys-tile", "e621", "Smile"), 			( "macys-tile", "e627", "Lightbulb"),
+        ( "macys-tile", "e622", "Stocks"), 			( "macys-tile", "e626", "Weather"),
+        ( "macys-tile", "e62a", "Shipping"), 	( "macys-tile", "e029", "Clip"),
+        ( "macys-tile", "f00a", "Waffle");
+
+
+//Generate icon css from $icons Array
+@each $icon in $icons {
+
+	$prefix: nth($icon,1);
+	$ecode: nth($icon,2);
+	$namelist: nth($icon,3);
+
+	@each $name in $namelist {
+		$namelowercase: to-lower-case($name);
+		.#{$prefix}-icon-#{$name}::before, .#{$prefix}-icon-#{$namelowercase}::before {
+					@include icon($ecode);
+		}
+	}
+}
+
+.macys-tile-icon-leftright:before {
+	content: "‹›";
+}
+
+
+$oldicons: ( "mymacys", "e000", "Office"), 			( "mymacys", "e00a", "Image"),
+				( "mymacys", "e00b", "Play"), 				( "mymacys", "e009", "Bullhorn"),
+				( "mymacys", "e00d", "Books"), 			( "mymacys", "e00c", "Profile"),
+				( "mymacys", "e013", "Folder"), 			( "mymacys", "e014", "Tag"),
+				( "mymacys", "e015", "Cart"), 				( "mymacys", "e016", "Phone"),
+				( "mymacys", "e017", "Calculate"), 	( "mymacys", "e018", "Alarm"),
+				( "mymacys", "e018", "Bubbles"), 		( "mymacys", "e01a", "Users"),
+				( "mymacys", "e01b", "Binoculars"), 	( "mymacys", "e01c", "Key"),
+				( "mymacys", "e020", "Bug"), 				( "mymacys", "e021", "Pie"),
+				( "mymacys", "e023", "Trophy"), 			( "mymacys", "e024", "Leaf"),
+				( "mymacys", "e025", "Fire"), 				( "mymacys", "e026", "Airplane"),
+				( "mymacys", "e027", "Truck"), 			( "mymacys", "e028", "Tree"),
+				( "mymacys", "e029", "Attachment"), 	( "mymacys", "e02a", "Bookmark"),
+				( "mymacys", "e02e", "Table"),				( "mymacys", "e600", "Home"),
+				( "mymacys", "e60a", "Padlock"), 		( "mymacys", "e62b", "Cogs"),
+				( "mymacys", "e60d", "Pencil"), 			( "mymacys", "e603", "Envelop"),
+				( "mymacys", "e603", "Envelope"), ( "mymacys", "e637", "Book"),
+				( "mymacys", "e605", "Download"), 			( "mymacys", "e608", "Meter"),
+				( "mymacys", "e609", "Shield"), 				( "mymacys", "e60f", "Link"),
+				( "mymacys", "e610", "Heart"), 					( "mymacys", "e61e", "Film"),
+				( "mymacys", "e61f", "Audio"), 					( "mymacys", "e60b", "Shirt"),
+				( "mymacys", "e628", "Trumpet"), 				( "mymacys", "e60c", "Database"),
+				( "mymacys", "e62c", "Tools"), 					( "mymacys", "e611", "Puzzle"),
+				( "mymacys", "e633", "Bag"), 						( "mymacys", "e636", "Training"),
+				( "mymacys", "e637", "Book"), 					( "mymacys", "e63b", "Help"),
+				( "mymacys", "e63d", "Barchart"), 			( "mymacys", "e63f", "Iphone"),
+				( "mymacys", "e640", "Desktop"), 				( "mymacys", "e643", "Phonebook"),
+				( "mymacys", "e642", "Mobile"), 				( "mymacys", "e60e", "Linechart"),
+				( "mymacys", "e613", "Dollar"), 				( "mymacys", "e614", "Food"),
+				( "mymacys", "e615", "Gift"), 					( "mymacys", "e618", "Apple"),
+				( "mymacys", "e61a", "Android"),	 			( "mymacys", "e61c", "Windows"),
+				( "mymacys", "e617", "Unix"), 					( "mymacys", "e616", "Legal"),
+				( "mymacys", "e619", "Question"), 			( "mymacys", "e61d", "Exclamation"),
+				( "mymacys", "e620", "Checkmark"), 			( "mymacys", "e623", "Creditcard"),
+				( "mymacys", "e61b", "Tablet"), 				( "mymacys", "e629", "Calendar"),
+				( "mymacys", "e62d", "Dollarbill"), 		( "mymacys", "e62e", "Ticket"),
+				( "mymacys", "e000", "Building"), 			( "mymacys", "e00a", "Image"),
+				( "mymacys", "e00b", "Play"), 					( "mymacys", "e00c", "Announce"),
+				( "mymacys", "e00d", "Books"), 					( "mymacys", "e011", "Page"),
+				( "mymacys", "e013", "Folder"), 				( "mymacys", "e014", "Tag"),
+				( "mymacys", "e015", "Cart"), 					( "mymacys", "e016", "Phone"),
+				( "mymacys", "e017", "Calc"), 					( "mymacys", "e018", "Alarm"),
+				( "mymacys", "e019", "Chat"), 					( "mymacys", "e003", "People"),
+				( "mymacys", "e01b", "Find"), 					( "mymacys", "e01c", "Key"),
+				( "mymacys", "e020", "Bug"), 						( "mymacys", "e021", "Piechart"),
+				( "mymacys", "e023", "Award"), 					( "mymacys", "e024", "Leaf"),
+				( "mymacys", "e025", "Fire"), 					( "mymacys", "e026", "Airplane"),
+				( "mymacys", "e027", "Truck"), 					( "mymacys", "e028", "Org"),
+				( "mymacys", "e600", "Home"), 					( "mymacys", "e605", "Lock"),
+				( "mymacys", "e60d", "Pencil"), 				( "mymacys", "e612", "Email"),
+				( "mymacys", "e029", "Clip"), 				( "mymacys", "e021", "Piechart"),
+				( "mymacys", "e02a", "Bookmark"), 				( "mymacys", "e02e", "Table"),
+				( "mymacys", "e62b", "Settings");
+
+//Generate icon css from $icons Array
+@each $icon in $oldicons {
+
+	$prefix: nth($icon,1);
+	$ecode: nth($icon,2);
+	$namelist: nth($icon,3);
+
+	@each $name in $namelist {
+		$namelowercase: to-lower-case($name);
+		.#{$prefix}-icon-#{$name}::before, .#{$prefix}-icon-#{$namelowercase}::before {
+					@include icon($ecode);
+		}
+	}
+}

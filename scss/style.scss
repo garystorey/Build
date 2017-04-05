@@ -1,0 +1,24 @@
+//$branding : 'Macys';
+//$branding : 'Bloomingdales';
+$branding : 'MacysPartners';
+
+@import "./shared/variables";
+@import "./shared/colors";
+@import "./shared/typography";
+@import "./shared/mixins";
+@import "./shared/reset";
+@import "./shared/animations";
+@import "./shared/iconfonts";
+
+@import "./desktop/partners";
+
+@import "./desktop/cclamp";
+@import "./desktop/footer";
+@import "./desktop/navcontentareas";
+@import "./desktop/macysCore15Overrides";
+@import "./desktop/webparts";
+@import "./desktop/search";
+@import "./shared/tiles";
+@import "./desktop/sandbox";
+
+

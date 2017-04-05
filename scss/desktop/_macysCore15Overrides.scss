@@ -1,0 +1,3058 @@
+input[type=password],
+input[type=text],
+input[type=file],
+select,
+textarea,
+.sp-peoplepicker-topLevel,
+.sp-peoplepicker-topLevelDisabled,
+.sp-peoplepicker-autoFillContainer,
+.ms-inputBox
+{
+/* [ReplaceColor(themeColor:"Lines")] */ border:1px solid $gray85;
+/* [ReplaceColor(themeColor:"BackgroundOverlay",opacity:"1")] */ background-color:$white;
+/* [ReplaceColor(themeColor:"BackgroundOverlay")] */ background-color:$white;
+/* [ReplaceColor(themeColor:"BodyText")] */ color:$gray30;
+}
+
+
+input[type=button],
+input[type=reset],
+input[type=submit],
+button
+{
+min-width:6em;
+padding:7px 10px;
+/* [ReplaceColor(themeColor:"ButtonBorder")] */ border:1px solid $gray85;
+/* [ReplaceColor(themeColor:"ButtonBackground",opacity:"1")] */ background-color:$gray95;
+/* [ReplaceColor(themeColor:"ButtonBackground")] */ background-color:$gray95;
+margin-left:10px;
+/* [ReplaceFont(themeFont:"body")] */ font-family:"Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+font-size:11px;
+/* [ReplaceColor(themeColor:"ButtonText")] */ color:$gray30;
+font-weight:bold;
+}
+
+
+input[type=password]:focus,
+input[type=text]:focus,
+select:focus,
+textarea:focus,
+.sp-peoplepicker-topLevelFocus,
+.ms-inputBoxActive,
+.ms-inputBox.ms-inputBoxActive:hover
+{
+/* [ReplaceColor(themeColor:"AccentLines")] */ border-color:$gray30;
+}
+
+
+input[type=password]:hover,
+input[type=text]:hover,
+input[type=file]:hover,
+textarea:hover,
+.sp-peoplepicker-topLevel:hover,
+.ms-inputBox:hover
+{
+/* [ReplaceColor(themeColor:"StrongLines")] */ border-color:$gray70;
+}
+
+
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover,
+button:hover
+{
+/* [ReplaceColor(themeColor:"ButtonHoverBorder")] */ border-color:$gray70;
+/* [ReplaceColor(themeColor:"ButtonHoverBackground",opacity:"1")] */ background-color:$gray85;
+/* [ReplaceColor(themeColor:"ButtonHoverBackground")] */ background-color:$gray85;
+}
+input[type=button]:active,
+input[type=reset]:active,
+input[type=submit]:active,
+button:active
+{
+/* [ReplaceColor(themeColor:"ButtonPressedBorder")] */ border-color:$gray30;
+/* [ReplaceColor(themeColor:"ButtonPressedBackground",opacity:"1")] */ background-color:$selection;
+/* [ReplaceColor(themeColor:"ButtonPressedBackground")] */ background-color:$gray85;
+}
+input.ms-button-emphasize,
+button.ms-button-emphasize
+{
+/* [ReplaceColor(themeColor:"EmphasisBorder")] */ border-color:$lightred;
+/* [ReplaceColor(themeColor:"EmphasisBackground",opacity:"1")] */ background-color:$primary-color;
+/* [ReplaceColor(themeColor:"EmphasisBackground")] */ background-color:$primary-color;
+/* [ReplaceColor(themeColor:"EmphasisText")] */ color:$white;
+}
+input.ms-button-emphasize:hover,
+button.ms-button-emphasize:hover
+{
+/* [ReplaceColor(themeColor:"EmphasisHoverBackground",opacity:"1")] */ background-color:$lightred;
+/* [ReplaceColor(themeColor:"EmphasisHoverBackground")] */ background-color:$lightred;
+/* [ReplaceColor(themeColor:"EmphasisHoverBorder")] */ border-color:$selection;
+}
+
+a:visited
+{
+/* [ReplaceColor(themeColor:"Hyperlinkfollowed")] */ color:$primary-color;
+text-decoration:none;
+}
+a:active
+{
+/* [ReplaceColor(themeColor:"HyperlinkActive")] */ color:$selection;
+}
+a,.ms-link:visited
+{
+/* [ReplaceColor(themeColor:"Hyperlink")] */ color:$primary-color;
+text-decoration:none;
+}
+
+
+.ms-core-needIEFilter .ms-welcome-root
+{
+/* [ReplaceColor(themeColor:"SuiteBarBackground",opacity:"1")] */ border-left-color:$primary-color;
+}
+
+.ms-welcome-root > a.ms-core-menu-root:active,
+.ms-signInLink:active
+{
+/* [ReplaceColor(themeColor:"TopBarPressedText")] */ color:$selection;
+text-decoration:none;
+}
+
+
+.ms-welcome-root {
+	padding-left: 0;
+}
+
+.ms-promotedActionButton:active .ms-promotedActionButton-text
+{
+/* [ReplaceColor(themeColor:"TopBarPressedText")] */ color:$selection;
+}
+
+
+.ms-core-form-heading
+{
+/* [ReplaceColor(themeColor:"AccentText")] */ color:$primary-color;
+}
+
+
+.ms-core-form-title
+{
+font-size:inherit;
+/* [ReplaceColor(themeColor:"AccentText")] */ color:$primary-color;
+}
+
+.ms-input-divAroundTextArea
+{
+/* [ReplaceColor(themeColor:"Lines")] */ border:1px solid $gray85;
+padding:4px;
+}
+
+.ms-srch-sb-border
+{
+/* [ReplaceColor(themeColor:"Lines")] */ border:1px solid $gray85;
+}
+.ms-core-header .ms-srch-sb-border
+{
+/* [ReplaceColor(themeColor:"HeaderLines")] */ border:1px solid $gray85;
+}
+.ms-srch-sb-border:hover
+{
+/* [ReplaceColor(themeColor:"StrongLines")] */ border:1px solid $gray70;
+}
+.ms-core-header .ms-srch-sb-border:hover
+{
+/* [ReplaceColor(themeColor:"HeaderStrongLines")] */ border:1px solid $gray70;
+}
+.ms-srch-sb-borderFocused
+{
+/* [ReplaceColor(themeColor:"AccentLines")] */ border:1px solid $gray30;
+}
+.ms-core-header .ms-srch-sb-borderFocused
+{
+/* [ReplaceColor(themeColor:"HeaderAccentLines")] */ border:1px solid $gray30;
+}
+.ms-srch-sb-searchLink:hover,.ms-srch-sb-navLink:hover
+{
+/* [ReplaceColor(themeColor:"ButtonHoverBackground",opacity:"1")] */ background-color:$gray85;
+/* [ReplaceColor(themeColor:"ButtonHoverBackground")] */ background-color:$gray85;
+}
+.ms-srch-sb-searchLink:active,
+.ms-srch-sb-searchLink > img:active,
+.ms-srch-sb-navLink:active,
+.ms-srch-sb-navLink > img:active,
+.ms-srch-sb-navLink-menuOpen,
+.ms-srch-sb-navLink-menuOpen:hover
+{
+/* [ReplaceColor(themeColor:"ButtonPressedBackground",opacity:"1")] */ background-color:$gray85;
+/* [ReplaceColor(themeColor:"ButtonPressedBackground")] */ background-color:$gray85;
+}
+
+.ms-qSuggest-hListItem{
+/* [ReplaceColor(themeColor:"HoverBackground",opacity:"1")] */ background-color:$gray90;
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color:$gray95;
+margin:0px;
+padding:7px 10px;
+}
+
+
+.ms-storefront-appiconspan
+{
+height:96px;
+width:96px;
+line-height:90px;
+position:relative;
+display:inline-block;
+text-align:center;
+overflow:hidden;
+/* [ReplaceColor(themeColor:"EmphasisBackground")] */ background-color:$primary-color;
+}
+
+.ms-accentText,.ms-accentText:visited
+{
+/* [ReplaceColor(themeColor:"AccentText")] */ color:$primary-color;
+}
+
+
+.ms-subtleLink:hover,
+.ms-atMention:hover,
+.ms-hashTag:hover
+{
+/* [ReplaceColor(themeColor:"CommandLinksHover")] */ color:$primary-color;
+text-decoration:none;
+}
+.ms-subtleLink:active,
+.ms-atMention:active,
+.ms-hashTag:active
+{
+/* [ReplaceColor(themeColor:"CommandLinksPressed")] */ color:$selection;
+text-decoration:none;
+}
+
+.ms-calloutLink:hover,
+.ms-commandLink:hover,
+.ms-secondaryCommandLink:hover
+{
+/* [ReplaceColor(themeColor:"CommandLinksHover")] */ color:$primary-color;
+text-decoration:none;
+}
+.ms-calloutLink:active,
+.ms-commandLink:active,
+.ms-secondaryCommandLink:active
+{
+/* [ReplaceColor(themeColor:"CommandLinksPressed")] */ color:$selection;
+}
+.ms-heroCommandLink,
+.ms-heroCommandLink:visited
+{
+/* [ReplaceColor(themeColor:"CommandLinksHover")] */ color:$primary-color;
+text-decoration:none;
+}
+.ms-heroCommandLink:hover,
+.ms-heroCommandLink:active
+{
+/* [ReplaceColor(themeColor:"CommandLinksPressed")] */ color:$selection;
+text-decoration:none;
+}
+
+.ms-emphasis{
+/* [ReplaceColor(themeColor:"EmphasisText")] */ color:$white;
+/* [ReplaceColor(themeColor:"EmphasisBackground")] */ background-color:$primary-color;
+}
+
+.ms-emphasisBorder:hover{
+/* [ReplaceColor(themeColor:"EmphasisHoverBorder")] */ border-color:$selection;
+}
+
+.ms-subtleEmphasisCommand:hover{
+/* [ReplaceColor(themeColor:"CommandLinksHover")] */ color:$primary-color;
+}
+.ms-subtleEmphasisCommand:active{
+/* [ReplaceColor(themeColor:"CommandLinksPressed")] */ color:$selection;
+}
+
+.ms-sideNav:hover{
+/* [ReplaceColor(themeColor:"NavigationHover")] */ color:$primary-color;
+}
+.ms-sideNav:active{
+/* [ReplaceColor(themeColor:"NavigationPressed")] */ color:$selection;
+}
+.ms-sideNav:hover,
+.ms-sideNav:active{
+/* [ReplaceColor(themeColor:"NavigationHoverBackground")] */ background-color:$gray95;
+}
+.ms-topBar:active{
+/* [ReplaceColor(themeColor:"TopBarPressedText")] */ color:$selection;
+}
+
+.ms-lines{
+/* [ReplaceColor(themeColor:"Lines")] */ border:1px solid $gray85;
+}
+.ms-strongLines{
+/* [ReplaceColor(themeColor:"StrongLines")] */ border:1px solid $gray70;
+}
+.ms-accentLines{
+/* [ReplaceColor(themeColor:"AccentLines")] */ border:1px solid $gray30;
+}
+
+.ms-bgHoverable:hover{
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color:$gray95;
+}
+.ms-bgSelected{
+/* [ReplaceColor(themeColor:"SelectionBackground")] */ background-color:$gray95;
+}
+.ms-ContentAccent1-fontColor{/* [ReplaceColor(themeColor:"ContentAccent1",opacity:"1")] */ color:$primary-color;}
+.ms-ContentAccent1-bgColor{/* [ReplaceColor(themeColor:"ContentAccent1")] */ background-color:$primary-color;}
+.ms-SelectionBackground-bgColor{/* [ReplaceColor(themeColor:"SelectionBackground")] */ background-color:$gray95;}
+.ms-HoverBackground-bgColor{/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color:$gray95;}
+.ms-EmphasisBackground-bgColor{/* [ReplaceColor(themeColor:"EmphasisBackground")] */ background-color:$primary-color;}
+.ms-ContentAccent1-borderColor{/* [ReplaceColor(themeColor:"ContentAccent1",opacity:"1")] */ border-color:$primary-color;}
+.ms-Lines-borderColor{/* [ReplaceColor(themeColor:"Lines",opacity:"1")] */ border-color:$gray85;}
+.ms-AccentLines-borderColor{/* [ReplaceColor(themeColor:"AccentLines",opacity:"1")] */ border-color:$gray30;}
+.ms-FocusedAccentLine-borderColor{/* [ReplaceColor(themeColor:"FocusedAccentLine",opacity:"1")] */ border-color:$gray30;}
+.ms-RowAccent-borderColor{/* [ReplaceColor(themeColor:"RowAccent",opacity:"1")] */ border-color:$primary-color;}
+
+.ms-rteThemeForeColor-5-0
+{
+/* [ReplaceColor(themeColor:"ContentAccent1",opacity:"1")] */ color:$primary-color;
+-ms-name:"Accent 1";
+/* [ColorName] */ -ms-color:"Dark Blue";
+}
+
+.ms-rteThemeBackColor-5-0
+{
+/* [ReplaceColor(themeColor:"ContentAccent1",opacity:"1")] */ background-color:$primary-color;
+-ms-name:"Accent 1";
+/* [ColorName] */ -ms-color:"Dark Blue";
+}
+
+.ms-rteImage-2
+{
+-ms-name:"Table border";
+padding:2px;
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border-top:1px solid $gray80;
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom:1px solid $gray85;
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border-left:1px solid $gray80;
+/* [ReplaceColor(themeColor:"Lines")] */ border-right:1px solid $gray85;
+}
+
+.ms-rteImage-4
+{
+-ms-name:"Light border";
+padding:6px;
+padding-bottom:33px;
+/* [ReplaceColor(themeColor:"BackgroundOverlay-Lightest",opacity:"1")] */ background-color:$gray95;
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border-top:1px solid $gray80;
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom:1px solid $gray85;
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border-left:1px solid $gray80;
+/* [ReplaceColor(themeColor:"Lines")] */ border-right:1px solid $gray85;
+background-image:url("/_layouts/15/images/selbg.png?rev=23");
+background-repeat:repeat-x;
+background-position:top;
+}
+
+
+.ms-rteTable-1 tr.ms-rteTableHeaderRow-1,
+.ms-rteTable-1 tr.ms-rteTableFooterRow-1,
+.ms-rteTable-1 tr.ms-rteTableHeaderRow-1 > th,
+.ms-rteTable-1 tr.ms-rteTableFooterRow-1 > th,
+.ms-rteTable-1 tr.ms-rteTableFooterRow-1 > td
+{
+/* [ReplaceColor(themeColor:"BackgroundOverlay",opacity:"1")] */ background-color:$white;
+/* [ReplaceColor(themeColor:"BackgroundOverlay")] */ background-color:$white;
+/* [ReplaceColor(themeColor:"Lines")] */ border-top:1px solid $gray85;
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom:1px solid $gray85;
+}
+
+.ms-rteTable-2 tr.ms-rteTableOddRow-2,
+.ms-rteTable-2 tr.ms-rteTableEvenRow-2
+{
+/* [ReplaceColor(themeColor:"StrongLines")] */ border-top:1px solid $gray70;
+/* [ReplaceColor(themeColor:"StrongLines")] */ border-bottom:1px solid $gray70;
+}
+
+.ms-rteTable-3,
+.ms-rteTable-3 > tbody > tr > td,
+.ms-rteTable-3 > tbody > tr > th
+{
+/* [ReplaceColor(themeColor:"Lines")] */ border:1px solid $gray85;
+}
+
+
+.ms-rte-autocomplete
+{
+/* [ReplaceColor(themeColor:"BackgroundOverlay",opacity:"1")] */ background-color:$white;
+border-width:1px;
+border-style:solid;
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border-top-color:$gray80;
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom-color:$gray85;
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border-left-color:$gray80;
+/* [ReplaceColor(themeColor:"Lines")] */ border-right-color:$gray85;
+font-family:Verdana;
+font-size:1em;
+padding-top:10px;
+padding-bottom:10px;
+position:absolute;
+cursor:default;
+}
+
+.ms-rte-autocomplete-results div.ms-rte-autocomplete-selected,
+.ms-rte-autocomplete-modes div.ms-rte-autocomplete-selected
+{
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color:$gray95;
+}
+
+
+.ms-rtestate-field h1,
+h1.ms-rteElement-H1,
+.ms-rtestate-field h2,
+h2.ms-rteElement-H2
+{
+line-height:1.4;
+/* [ReplaceColor(themeColor:"ContentAccent1")] */ color:$primary-color;
+}
+
+.ms-rteElement-Hr
+{
+/* [ReplaceColor(themeColor:"Lines")] */ background-color:$gray85;
+height:1px;
+}
+
+.ms-rteStyle-Emphasis,
+.ms-rteStyle-IntenseEmphasis
+{
+font-style:italic;
+/* [ReplaceColor(themeColor:"ContentAccent1")] */ color:$primary-color;
+}
+
+.ms-rteStyle-Comment,
+.ms-rteStyle-Accent1
+{
+/* [ReplaceColor(themeColor:"ContentAccent1")] */ color:$primary-color;
+}
+
+.ms-acal-rootdiv a:visited{
+/* [ReplaceColor(themeColor:"Hyperlink")] */ color:$primary-color;
+}
+.ms-acal-rootdiv th.ms-acal-detailtime,
+.ms-acal-rootdiv th.ms-acal-day-top,
+.ms-acal-rootdiv th.ms-acal-month-top{
+font-weight:normal;;
+}
+
+
+tr td div.ms-acal-today{
+/* [ReplaceColor(themeColor:"AccentText")] */ color:$primary-color;
+/* [ReplaceColor(themeColor:"AccentLines")] */ border-top:solid 1px $gray30;
+}
+.ms-acal-week-top td.ms-acal-hover div,
+.ms-acal-summary-dayrow td.ms-acal-hover div,
+.ms-acal-summary-dayrow th.ms-acal-hover{
+/* [ReplaceColor(themeColor:"AccentLines")] */ border-color:$gray30 !important;
+text-decoration:underline;
+}
+.ms-acal-weekgroup-top td.ms-acal-hover div{
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color:$gray95;
+/* [ReplaceColor(themeColor:"AccentLines")] */ border-color:$gray30 !important;
+text-decoration:underline;
+}
+
+.ms-acal-entitybuttons + .ms-acal-entity-res{
+padding-top:3px;
+margin-top:3px;
+/* [ReplaceColor(themeColor:"StrongLines")] */ border-top:1px dotted $gray70;
+}
+
+.ms-acal-vitem,td.ms-acal-vitem{
+/* [ReplaceColor(themeColor:"SelectionBackground")] */ background-color:$gray95;
+}
+
+.ms-acal-item{
+/* [ReplaceColor(themeColor:"ContentAccent1",opacity:"1")]  background-color:$primary-color;*/
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border:solid 1px $gray80;
+}
+
+.ms-acal-default-hover{
+/* [ReplaceColor(themeColor:"Lines")] */ border:solid 1px $gray85;
+}
+.ms-acal-item-hover{
+/* [ReplaceColor(themeColor:"Lines")] */ border:solid 1px $gray85;
+}
+.ms-acal-selected{
+/* [ReplaceColor(themeColor:"ContentAccent1-Darker",opacity:"1")] */ background-color:$primary-color;
+/* [ReplaceColor(themeColor:"StrongLines")] */ border:solid 1px $gray70;
+}
+
+.ms-acal-apanel-item{
+padding:2px 8px 2px 8px;
+margin:4px 0px 0px 30px;
+display:inline-block;
+/* [ReplaceColor(themeColor:"ContentAccent1",opacity:"1")]  background-color:$primary-color;*/
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border:solid 1px $gray80;
+}
+
+.ms-acal-apanel-color2{
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border:solid 1px $gray80;
+/* [ReplaceColor(themeColor:"ContentAccent1",opacity:"1")] */ background-color:$primary-color;
+}
+
+.ms-fb-head table{
+/* [ReplaceColor(themeColor:"Lines")] */ border:1px solid $gray85;
+}
+.ms-fb-body table{
+/* [ReplaceColor(themeColor:"Lines")] */ border-top:1px solid $gray85;
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom:1px solid $gray85;
+}
+
+.ms-fb-select td{
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom:1px solid $gray85;
+}
+
+.ms-fb-body .ms-fb-select td,
+.ms-fb-body .ms-fb-time th{
+/* [ReplaceColor(themeColor:"Lines")] */ border-right:1px solid $gray85;
+}
+.ms-fb-select td,
+.ms-fb-time th{
+/* [ReplaceColor(themeColor:"SelectionBackground")] */ background-color:$gray95;
+/* [ReplaceColor(themeColor:"BodyText")] */ color:$gray30;
+}
+
+.ms-fb-selected{
+/* [ReplaceColor(themeColor:"EmphasisBackground")] */ background-color:$primary-color;
+}
+.ms-fb-sumitem,
+.ms-fb-border,
+.ms-fb-summary,
+.ms-fb-entity{
+/* [ReplaceColor(themeColor:"Lines")] */ border-right:1px solid $gray85;
+}
+
+.ms-picker-header table.ms-picker-table{
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom:1px solid $gray85;
+}
+
+table.ms-picker-table td.ms-picker-today{
+text-align:center;
+/* [ReplaceColor(themeColor:"AccentLines")] */ border:solid 1px $gray30;
+}
+
+table.ms-picker-table td.ms-picker-dayselected{
+/* [ReplaceColor(themeColor:"SelectionBackground")] */ background-color:$gray95;
+border:1px solid transparent;
+text-align:center;
+}
+.ms-core-needIEFilter table.ms-picker-table td.ms-picker-dayselected
+{
+/* [ReplaceColor(themeColor:"SelectionBackground",opacity:"1")] */ background-color:$gray70;
+}
+
+.ms-quickLaunch table.ms-picker-table td.ms-picker-monthselected{
+/* [ReplaceColor(themeColor:"BackgroundOverlay")] */ background-color:$white;
+/* [ReplaceColor(themeColor:"FocusedAccentLine")] */ border:solid 1px $gray30;
+/* [ReplaceColor(themeColor:"BodyText")] */ color:$gray30;
+padding-bottom:3px;
+text-align:center;
+}
+
+.ms-picker-footer a{
+/* [ReplaceColor(themeColor:"Hyperlink")] */ color:$primary-color;
+}
+
+.ms-picker-line{
+/* [ReplaceColor(themeColor:"Lines")] */ border-top:2px solid $gray85;
+}
+.ms-navframe .ms-datepickerouter{
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom:solid 1px $gray85;
+/* [ReplaceColor(themeColor:"Lines")] */ border-right:solid 1px $gray85;
+}
+.ms-datepickerouter .ms-quickLaunch{
+padding-top:0px;
+/* [ReplaceColor(themeColor:"Lines")] */ border:1px solid $gray85;
+}
+
+.RemoveConnectionLink{
+/* [ReplaceColor(themeColor:"Hyperlink")] */ color:$primary-color;
+text-decoration:none;
+}
+.ConnectionChooseActiveTab{
+/* [ReplaceColor(themeColor:"Lines")] */ border:solid 1px $gray85;
+padding:3px;
+display:inline;
+height:24px;
+/* [ReplaceColor(themeColor:"SubtleEmphasisBackground")] */ background-color:$gray95;
+}
+.ConnectionChooseInactiveTab{
+/* [ReplaceColor(themeColor:"Lines")] */ border-top:solid 1px $gray85;
+/* [ReplaceColor(themeColor:"Lines")] */ border-right:solid 1px $gray85;
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom:solid 1px $gray85;
+padding:3px;
+display:inline;
+margin-top:4px;
+height:20px;
+/* [ReplaceColor(themeColor:"BodyText")] */ color:$gray30;
+/* [ReplaceColor(themeColor:"DisabledBackground")] */ background-color:$gray95;
+}
+
+.ConnectionConfigureInactiveTab{
+/* [ReplaceColor(themeColor:"Lines")] */ border-top:solid 1px $gray85;
+/* [ReplaceColor(themeColor:"Lines")] */ border-left:solid 1px $gray85;
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom:solid 1px $gray85;
+padding:3px;
+margin-top:4px;
+display:inline;
+height:20px;
+/* [ReplaceColor(themeColor:"BodyText")] */ color:$gray30;
+/* [ReplaceColor(themeColor:"DisabledBackground")] */ background-color:$gray95;
+}
+.ConnectionConfigureActiveTab{
+/* [ReplaceColor(themeColor:"Lines")] */ border:solid 1px $gray85;
+padding:3px;
+display:inline;
+height:24px;
+/* [ReplaceColor(themeColor:"SubtleEmphasisBackground")] */ background-color:$gray95;
+}
+.UserConnectionTop{
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom:solid 1px $gray85;
+height:24px;
+width:100%;
+}
+
+.UserSectionTitle{
+width:100%;
+padding:5px 0px;
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom:solid 1px $gray85;
+/* [ReplaceColor(themeColor:"BodyText")] */ color:$gray30;
+/* [ReplaceColor(themeColor:"SubtleEmphasisBackground")] */ background-color:$gray95;
+}
+
+.UserCellHover{
+padding:1px 4px 2px 4px;
+/* [ReplaceColor(themeColor:"StrongLines")] */ border:solid 1px $selection;
+/* [ReplaceColor(themeColor:"BodyText")] */ color:$gray30;
+}
+
+.ms-SPZone:hover{
+/* [ReplaceColor(themeColor:"StrongLines")] */ border:1px solid $selection;
+}
+.s4-wzActive,.ms-SPZoneSelected{
+/* [ReplaceColor(themeColor:"AccentLines")] */ border:1px solid $selection;
+}
+
+.ms-WPAddButton{
+/* [ReplaceColor(themeColor:"Lines")] */ border:solid 1px $gray70;
+padding:12px;
+margin:0px;
+cursor:pointer;
+text-align:center;
+/* [ReplaceColor(themeColor:"BackgroundOverlay")] */ background-color:$white;
+}
+
+.ms-WPAddButton:hover{
+/* [ReplaceColor(themeColor:"StrongLines")] */ border:solid 1px $selection;
+}
+
+
+#ms-dnd-dropbox{
+position:absolute;
+text-align:center;
+border:1px solid;
+/* [ReplaceColor(themeColor:"AccentLines")] */ border-color:$selection;
+z-index:2;
+/* [ReplaceColor(themeColor:"BackgroundOverlay")] */ background-color:$white;
+margin:0px;
+}
+
+
+.ms-droppable-menuitem-hover{
+/* [ReplaceColor(themeColor:"AccentLines")] */ border:$selection 2px dotted;
+}
+.ms-droppable-folder-hover{
+/* [ReplaceColor(themeColor:"AccentLines")] */ border:$selection 2px dotted;
+}
+.ms-dropsurface-div
+{
+position:absolute;
+/* [ReplaceColor(themeColor:"BackgroundOverlay",opacity:"1")] */ background-color:$white;
+/* [ReplaceColor(themeColor:"BackgroundOverlay")] */ background-color:$white;
+/* [ReplaceColor(themeColor:"AccentLines")] */ border:$selection 1px solid;
+z-index:99;
+}
+
+.ms-progress-meter-inner
+{
+/* [ReplaceColor(themeColor:"AccentLines")] */ background-color:$selection;
+height:100%;
+}
+
+.ms-dnd-inprogress
+{
+position:absolute;
+vertical-align:middle;
+text-align:center;
+/* [ReplaceColor(themeColor:"BackgroundOverlay")] */ background-color:$white;
+/* [ReplaceColor(themeColor:"Lines")] */ border:$gray70 1px solid;
+z-index:99;
+}
+
+.s4-wpActive .s4-wpTopTable,.s4-wpActive .ms-WPSelected{
+/* [ReplaceColor(themeColor:"StrongLines")] */ border:1px solid $selection;
+}
+
+.s4-wpActive .ms-WPTitle,.s4-wpActive .ms-WPTitle a{
+/* [ReplaceColor(themeColor:"AccentText")] */ color:$primary-color;
+}
+
+.ms-webpart-menuLink:hover
+{
+/* [ReplaceColor(themeColor:"Lines")] */ border-color:$gray70;
+}
+
+.js-callout-location:hover
+{
+/* [ReplaceColor(themeColor:"Lines")] */ border-color:$gray70;
+}
+
+.ms-comm-reputationBarSq{
+/* [ReplaceColor(themeColor:"AccentLines")] */ background-color:$selection;
+margin-right:2px;
+max-height:8px;
+min-width:8px;
+vertical-align:top;
+display:inline-block;
+}
+.ms-comm-reputationBarSqLast{
+/* [ReplaceColor(themeColor:"AccentLines")] */ background-color:$selection;
+max-height:8px;
+min-width:8px;
+vertical-align:top;
+display:inline-block;
+}
+
+.ms-comm-reputationSettingsTable{
+/* [ReplaceColor(themeColor:"Lines")] */ border:1px solid $gray70;
+border-collapse:collapse;
+}
+.ms-comm-reputationSettingsTable > tbody > tr > td{
+/* [ReplaceColor(themeColor:"Lines")] */ border:1px solid $gray70;
+padding:3px;
+}
+
+.ms-comm-likesCount{
+/* [ReplaceColor(themeColor:"AccentLines")] */ color:$selection;
+}
+.ms-comm-likesCount { position: relative; top: 4px;}
+.ms-comm-likesMetadata { position: relative;top: -4px;}
+
+
+li > a.ms-core-listMenu-item.ms-core-listMenu-selected:hover,
+li > a.ms-core-listMenu-item:hover,
+li > a.ms-core-listMenu-item:active
+{
+/* [ReplaceColor(themeColor:"NavigationHoverBackground",opacity:"1")] */
+background-color:$gray95 ;
+/* [ReplaceColor(themeColor:"NavigationHoverBackground")] */
+background-color:$gray95 ;
+}
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover,
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover,
+a.ms-tv-item:hover,
+a.ms-tv-header:hover
+{
+background-color:transparent;
+/* [ReplaceColor(themeColor:"NavigationHover")] */ color:$primary-color;
+}
+.ms-core-header .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover,
+.ms-core-header a.ms-tv-item:hover,
+.ms-core-header a.ms-tv-header:hover
+{
+/* [ReplaceColor(themeColor:"HeaderNavigationHoverText")] */ color:$primary-color;
+}
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:active,
+a.ms-tv-item:active,
+a.ms-tv-header:active
+{
+background-color:transparent;
+/* [ReplaceColor(themeColor:"NavigationPressed")] */ color:$lightred;
+}
+
+.ms-core-header .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:active,
+.ms-core-header a.ms-tv-item:active,
+.ms-core-header a.ms-tv-header:active
+{
+/* [ReplaceColor(themeColor:"HeaderNavigationPressedText")] */ color:$lightred;
+}
+
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link,
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited,
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected,
+.ms-tv-selected:link
+{
+background-color:transparent;
+/* [ReplaceColor(themeColor:"NavigationAccent")] */ color:$primary-color;
+}
+.ms-core-header .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link,
+.ms-core-header .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited,
+.ms-core-header .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected,
+.ms-core-header .ms-tv-selected:link
+{
+/* [ReplaceColor(themeColor:"HeaderNavigationSelectedText")] */ color:$primary-color;
+}
+
+.ms-navedit-editLinksText:hover > span > .ms-metadata,
+.ms-core-listMenuEdit:hover > tr > .ms-navedit-linkCell > .ms-core-listMenu-item
+{
+/* [ReplaceColor(themeColor:"CommandLinksHover")] */ color:$primary-color;
+}
+.ms-navedit-editLinksText:active > span > .ms-metadata,
+.ms-core-listMenuEdit:active > tr > .ms-navedit-linkCell > .ms-core-listMenu-item
+{
+/* [ReplaceColor(themeColor:"CommandLinksPressed")] */ color:$lightred;
+}
+
+
+.ms-navedit-titleBoxContainer,
+.ms-navedit-titleBoxContainer ms-core-listMenu-selected,
+.ms-navedit-titleBoxContainer:hover,
+.ms-navedit-titleBoxContainer ms-core-listMenu-selected:hover
+{
+width:100%;
+/* [ReplaceColor(themeColor:"BackgroundOverlay",opacity:"1")] */ background-color:$white;
+/* [ReplaceColor(themeColor:"AccentLines")] */ border:1px solid $selection;
+/* [ReplaceColor(themeColor:"Navigation")] */ color:$gray40;
+}
+.ms-core-header .ms-navedit-titleBoxContainer,
+.ms-core-header .ms-navedit-titleBoxContainer ms-core-listMenu-selected,
+.ms-core-header .ms-navedit-titleBoxContainer:hover
+{
+/* [ReplaceColor(themeColor:"HeaderBackground",opacity:"1")] */ background-color:$white;
+/* [ReplaceColor(themeColor:"HeaderAccentLines")] */ border-color:$selection;
+/* [ReplaceColor(themeColor:"HeaderNavigationText")] */ color:$gray40;
+}
+
+.ms-vh-hoverable:hover
+{
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color: $primary-color;
+}
+.ms-core-needIEFilter .ms-vh-hoverable:hover
+{
+/* [ReplaceColor(themeColor:"HoverBackground")] */ -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr= $primary-color,endColorstr= $primary-color)";;
+}
+.ms-headerCellStyleHover
+{
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color: $gray90;
+}
+
+.ms-headerCellStylePressed
+{
+/* [ReplaceColor(themeColor:"SelectionBackground",opacity:"1")] */ background-color:$gray90;
+}
+.ms-headerCellStyleMenuOpen
+{
+/* [ReplaceColor(themeColor:"SelectionBackground")] */ background-color: $gray90;
+}
+
+.ms-headerCellStyleIcon:hover
+{
+/* [ReplaceColor(themeColor:"AccentLines")] */ border-bottom-color:$gray90;
+}
+
+.ms-vh-selectAllIcon:hover
+{
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color: $gray90;
+}
+
+.ms-vb-imgFirstCell:hover,.ms-vb-imgFirstCell:focus
+{
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color: $primary-color;
+}
+.s4-itm-selected > .ms-vb-imgFirstCell.ms-vb-imgFirstCell
+{
+/* [ReplaceColor(themeColor:"RowAccent")] */ background-color:$gray70;
+/* [ReplaceColor(themeColor:"SelectionBackground")] */ border-right-color: $gray80;
+background-clip:padding-box;
+-webkit-background-clip:padding;
+}
+
+.ms-spgrid-col-header-normal-hover
+{
+font-size:0.85em;
+font-weight:normal;
+/* [ReplaceColor(themeColor:"CommandLinks")] */ color:$gray40;
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color: $gray90;
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border-bottom-color:$gray80;
+border-right-color:transparent;
+border-top-color:transparent;
+border-left-color:transparent;
+}
+
+.ms-spgrid-col-header-part-selected
+{
+font-size:0.85em;
+font-weight:normal;
+/* [ReplaceColor(themeColor:"SubtleBodyText")] */ color:$gray50;
+background-color:transparent;
+/* [ReplaceColor(themeColor:"AccentLines")] */ border-bottom-color:$selection;
+border-right-color:transparent;
+border-top-color:transparent;
+border-left-color:transparent;
+}
+.ms-spgrid-col-header-part-selected-hover
+{
+font-size:0.85em;
+font-weight:normal;
+/* [ReplaceColor(themeColor:"CommandLinks")] */ color:$gray40;
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color: $gray90;
+/* [ReplaceColor(themeColor:"AccentLines")] */ border-bottom-color:$selection;
+border-right-color:transparent;
+border-top-color:transparent;
+border-left-color:transparent;
+}
+
+.ms-spgrid-col-header-all-selected
+{
+font-size:0.85em;
+font-weight:normal;
+/* [ReplaceColor(themeColor:"SubtleBodyText")] */ color:$gray50;
+background-color:transparent;
+/* [ReplaceColor(themeColor:"AccentLines")] */ border-bottom-color:$selection;
+border-right-color:transparent;
+border-top-color:transparent;
+border-left-color:transparent;
+}
+.ms-spgrid-col-header-all-selected-hover
+{
+font-size:0.85em;
+font-weight:normal;
+/* [ReplaceColor(themeColor:"CommandLinks")] */ color:$gray40;
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color: $gray90;
+/* [ReplaceColor(themeColor:"AccentLines")] */ border-bottom-color:$selection;
+border-right-color:transparent;
+border-top-color:transparent;
+border-left-color:transparent;
+}
+
+.ms-sectionheader
+{
+/* [ReplaceColor(themeColor:"AccentText")] */ color:$primary-color;
+font-weight:bold;
+}
+.ms-sectionheader a,.ms-sectionheader a:hover,.ms-sectionheader a:visited
+{
+/* [ReplaceColor(themeColor:"AccentText")] */ color:$primary-color;
+text-decoration:none;
+}
+
+div.ms-viewselector a,div.ms-viewselectorhover a.ms-menu-a span{
+/* [ReplaceColor(themeColor:"AccentText")] */ color:$primary-color;
+}
+
+.ms-splitbuttonhover{
+margin:0px 2px;
+border-collapse:collapse;
+height:22px;
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color: $white;}
+.ms-splitbuttonhover .ms-splitbuttondropdown{
+padding:3px 1px 0px 2px;
+}
+
+.ms-gb{
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom:1px solid $gray70;
+height:22px;
+font-weight:bold;
+padding-bottom:3px;
+}
+
+.ms-vb a:visited,.ms-vb2 a:visited,.ms-vb-user a:visited{
+/* [ReplaceColor(themeColor:"Hyperlink")] */ color:$primary-color;
+text-decoration:none;
+}
+.ms-vb a:visited:hover,.ms-vb2 a:visited:hover,.ms-vb-user a:visited:hover{
+/* [ReplaceColor(themeColor:"Hyperlink")] */ color:$primary-color;
+text-decoration:underline;
+}
+.ms-alternatingstrong .ms-vb a:link,.ms-alternatingstrong .ms-vb2 a:link,.ms-alternatingstrong .ms-vb-user a:link,.ms-alternatingstrong .ms-vb a:visited,.ms-alternatingstrong .ms-vb2 a:visited,.ms-alternatingstrong .ms-vb-user a:visited,.ms-alternatingstrong .ms-vb a:visited:hover,.ms-alternatingstrong .ms-vb2 a:visited:hover,.ms-alternatingstrong .ms-vb-user a:visited:hover{
+/* [ReplaceColor(themeColor:"Hyperlink")] */ color:$primary-color;
+}
+
+.ms-pb-selected{
+height:22px;
+padding-top:3px;
+/* [ReplaceColor(themeColor:"SelectionBackground")] */ background-color: $selection;
+/* [ReplaceColor(themeColor:"SelectionBackground")] */ border-top:1px solid  $selection;
+/* [ReplaceColor(themeColor:"SelectionBackground")] */ border-bottom:1px solid  $selection;
+}
+
+table.ms-listviewtable > tbody > tr > td.ms-stylebox{
+/* [ReplaceColor(themeColor:"Lines")] */ border:1px solid $gray70;
+text-align:left
+}
+
+.ms-vb-title .s4-ctx-show
+{
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color: $gray90;
+}
+
+.ms-itmHoverEnabled:hover > *{
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color:$gray90;
+}
+.ms-itmHoverEnabled:hover .ms-list-itemLink-td{
+/* [ReplaceColor(themeColor:"HoverBackground",opacity:"1")] */ background-color:$gray90;
+}
+.s4-itm-selected > *,.s4-itm-selected:hover > *{
+/* [ReplaceColor(themeColor:"SelectionBackground")] */ background-color: $gray90;
+border:1px solid transparent;
+}
+.s4-itm-selected .ms-list-itemLink-td,.s4-itm-selected:hover .ms-list-itemLink-td{
+/* [ReplaceColor(themeColor:"SelectionBackground",opacity:"1")] */ background-color:$gray90;
+}
+
+.ms-viewselectorhover .ms-viewselector-currentView{
+/* [ReplaceColor(themeColor:"AccentText")] */ color:$primary-color;
+}
+
+.ms-pivotControl-surfacedOpt:hover,
+.ms-pivotControl-overflowDot:hover,
+.ms-pivotControl-surfacedOpt-selected{
+/* [ReplaceColor(themeColor:"CommandLinksHover")] */ color:$gray40;
+}
+
+.ms-InlineSearch-Outline-Empty
+{
+/* [ReplaceColor(themeColor:"Lines")] */ border-color:$gray70;
+height: 30px;
+width: 188px;
+}
+.ms-InlineSearch-Outline-Focused
+{
+/* [ReplaceColor(themeColor:"AccentLines")] */ border-color:$selection;
+height: 30px;
+width: 188px;
+}
+.ms-InlineSearch-Outline-Filled
+{
+/* [ReplaceColor(themeColor:"StrongLines")] */ border-color:$selection;
+}
+
+.ms-vl-apptileselected
+{
+/* [ReplaceColor(themeColor:"SelectionBackground")] */ background-color: $gray80;
+}
+.ms-vl-apptilehover:hover
+{
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color: $gray90;
+}
+
+.ms-newdoc-callout-item:hover
+{
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color: $gray90;
+text-decoration:none;
+}
+
+.ms-featurestatus
+{
+/* [ReplaceColor(themeColor:"EmphasisText")] */ color:$white;
+/* [ReplaceColor(themeColor:"EmphasisBackground",opacity:"1")] */ background-color:$primary-color;
+margin-right:10px;
+padding:7px;
+}
+
+.ms-storMeUsed{
+/* [ReplaceColor(themeColor:"EmphasisBackground",opacity:"1")] */ background-color:$primary-color;
+/* [ReplaceColor(themeColor:"EmphasisText")] */ color:$white;
+padding-left:8px;
+padding-right:8px;
+padding-top:3px;
+padding-bottom:3px;
+}
+a.ms-taskListShortcutCallout{ }
+
+.ms-trcnoti-bg:hover{
+border-width:1px;
+border-style:solid;
+/* [ReplaceColor(themeColor:"StrongLines")] */ border-color:$selection;
+/* [ReplaceColor(themeColor:"HoverBackground")] */ background-color: $gray90;
+padding:0px;
+box-shadow:0px 0px 7px 0px rgba(0,0,0,0.47);
+}
+
+.ms-designgallery-thumbnail:hover
+{
+/* [ReplaceColor(themeColor:"AccentLines")] */ border:1px solid $selection;
+}
+
+div.ms-designgallery-item-current > .ms-designgallery-thumbnail
+{
+height:204px;
+width:274px;
+/* [ReplaceColor(themeColor:"AccentLines")] */ border:3px solid $selection;
+}
+div.ms-designgallery-item-current a.ms-designgallery-packagename
+{
+/* [ReplaceColor(themeColor:"Hyperlink")] */ color:$primary-color;
+}
+
+#ms-designbuilder-cuicontainer .ms-cui-ctl-light-hoveredOver,
+#ms-designbuilder-cuicontainer .ms-cui-dd-arrow-button:hover,
+#ms-designbuilder-cuicontainer .ms-cui-dd-arrow-button:focus
+{
+/* [ReplaceColor(themeColor:"ButtonHoverBackground")] */ background-color:$selection;
+/* [ReplaceColor(themeColor:"ButtonHoverBorder")] */ border-color:$selection;
+}
+.ms-core-needIEFilter #ms-designbuilder-cuicontainer .ms-cui-ctl-light-hoveredOver,
+.ms-core-needIEFilter #ms-designbuilder-cuicontainer .ms-cui-dd-arrow-button:hover,
+.ms-core-needIEFilter #ms-designbuilder-cuicontainer .ms-cui-dd-arrow-button:focus
+{
+/* [ReplaceColor(themeColor:"ButtonHoverBackground",opacity:"1")] */ background-color:$selection;
+/* [ReplaceColor(themeColor:"ButtonHoverBorder",opacity:"1")] */ border-color:$selection;
+}
+#ms-designbuilder-cuicontainer .ms-cui-dd-arrow-button:active
+{
+/* [ReplaceColor(themeColor:"ButtonPressedBackground")] */ background-color:$selection;
+/* [ReplaceColor(themeColor:"ButtonPressedBorder")] */ border-color:$selection;
+}
+.ms-core-needIEFilter #ms-designbuilder-cuicontainer .ms-cui-dd-arrow-button:active
+{
+/* [ReplaceColor(themeColor:"ButtonPressedBackground",opacity:"1")] */ background-color:$selection;
+/* [ReplaceColor(themeColor:"ButtonPressedBorder",opacity:"1")] */ border-color:$selection;
+}
+
+#ms-designbuilder-palette-menusection .ms-cui-gallerybutton-a:hover .ms-designbuilder-palette-color,
+#ms-designbuilder-palette-menusection .ms-cui-gallerybutton-a:focus .ms-designbuilder-palette-color
+{
+/* [ReplaceColor(themeColor:"AccentLines")] */ border-color:$selection;
+border-width:2px 1px 2px 0px;
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border-right-color:$gray70;
+}
+
+#ms-designbuilder-palette-menusection .ms-cui-gallerybutton-a:hover .ms-designbuilder-palette-color3,
+#ms-designbuilder-palette-menusection .ms-cui-gallerybutton-a:focus .ms-designbuilder-palette-color3
+{
+border-right-width:2px;
+/* [ReplaceColor(themeColor:"AccentLines")] */ border-right-color:$selection;
+}
+
+#ms-designbuilder-layout-menusection a.ms-cui-ctl-menu:hover,
+#ms-designbuilder-layout-menusection a.ms-cui-ctl-menu:focus
+{
+/* [ReplaceColor(themeColor:"AccentLines")] */ border-color:$selection;
+background-color:transparent;
+}
+
+a.ms-designbuilder-navbutton:hover,
+a.ms-designbuilder-navbutton:focus
+{
+/* [ReplaceColor(themeColor:"CommandLinksHover")] */ color:$primary-color;
+}
+a.ms-designbuilder-navbutton:active
+{
+/* [ReplaceColor(themeColor:"CommandLinksPressed")] */ color:$lightred;
+}
+
+.ms-blog-postBox{
+padding:32px;
+padding-left:0px;
+/* [ReplaceColor(themeColor:"Lines")] */ border:1px solid $gray70;
+border-radius:2px;
+overflow:visible;
+/* [ReplaceColor(themeColor:"BackgroundOverlay")] */ background-color:$white;
+}
+
+.ms-blog-postBoxDate{
+/* [ReplaceColor(themeColor:"EmphasisText")] */ color:$white;
+/* [ReplaceColor(themeColor:"EmphasisBackground")] */ background-color:$primary-color;
+width:77px;
+height:41px;
+border-style:solid;
+border-width:1px;
+/* [ReplaceColor(themeColor:"EmphasisBorder")] */ border-color:$lightred;
+float:left;
+text-align:center;
+}
+
+.ms-blog-postInlineDate{
+width:38px;
+height:45px;
+border-style:solid;
+border-width:1px;
+/* [ReplaceColor(themeColor:"Lines")] */ border-color:$gray70;
+border-left:none;
+border-right:none;
+float:left;
+text-align:center;
+}
+
+.ms-core-menu-item:hover,
+.ms-core-menu-itemSelected
+{
+/* [ReplaceColor(themeColor:"HoverBackground")] */
+	background-color: $gray90;
+}
+
+.ms-core-needIEFilter .ms-core-menu-item:hover,
+.ms-core-needIEFilter .ms-core-menu-itemSelected
+{
+/* [ReplaceColor(THEME_COLOR_BACKGROUND_SOLID,opacity:"1")] */
+	background-color: $gray90;;
+}
+
+.ms-core-menu-staticItemSelected,
+.ms-core-menu-staticItemSelected:hover
+{
+/* [ReplaceColor(themeColor:"SelectionBackground")] */ background-color: $selection;
+}
+.ms-core-needIEFilter .ms-core-menu-staticItemSelected,
+.ms-core-needIEFilter .ms-core-menu-staticItemSelected:hover
+{
+background-color:transparent;
+/* [ReplaceColor(THEME_COLOR_SELECTION_BACKGROUND_SOLID,opacity:"1")] */ background-color:$selection;
+}
+
+.ms-cui-cg-db.ms-cui-cg{
+border-top-color:$primary-color;
+}
+.ms-cui-ct-topBar-db,.ms-cui-tabBody-db{
+border-color:$primary-color !important;
+}
+.ms-cui-cg-db .ms-cui-ct-ul{
+background-color:transparent;;
+border-color:$primary-color;
+}
+.ms-cui-cg-db .ms-cui-tt-s > .ms-cui-tt-a > .ms-cui-tt-span,
+.ms-cui-cg-db .ms-cui-tt > .ms-cui-tt-a:hover > .ms-cui-tt-span{
+color:$selection !important;
+}
+.ms-cui-cg-db.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a,.ms-cui-cg-db.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a:hover{
+border-color:$primary-color;
+}
+.ms-cui-cg-db .ms-cui-ct-first > .ms-cui-tt-a,.ms-cui-cg-db .ms-cui-ct-first > .ms-cui-tt-a:hover{
+border-left-color:$primary-color;
+}
+.ms-cui-cg-db .ms-cui-ct-last > .ms-cui-tt-a,.ms-cui-cg-db .ms-cui-ct-last > .ms-cui-tt-a:hover{
+border-right-color:$primary-color;
+}
+.ms-cui-cg-lb.ms-cui-cg{
+border-top-color:$selection;
+}
+.ms-cui-ct-topBar-lb,.ms-cui-tabBody-lb{
+border-color:$selection !important;
+}
+
+.ms-cui-cg-lb .ms-cui-ct-ul{
+background-color:transparent;;
+border-color:$selection;
+}
+.ms-cui-cg-lb .ms-cui-tt-s > .ms-cui-tt-a > .ms-cui-tt-span,
+.ms-cui-cg-lb .ms-cui-tt > .ms-cui-tt-a:hover > .ms-cui-tt-span{
+color:$selection !important;
+}
+.ms-cui-cg-lb.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a,.ms-cui-cg-lb.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a:hover{
+border-color:$selection;
+}
+.ms-cui-cg-lb .ms-cui-ct-first > .ms-cui-tt-a,.ms-cui-cg-lb .ms-cui-ct-first > .ms-cui-tt-a:hover{
+border-left-color:$selection;
+}
+.ms-cui-cg-lb .ms-cui-ct-last > .ms-cui-tt-a,.ms-cui-cg-lb .ms-cui-ct-last > .ms-cui-tt-a:hover{
+border-right-color:$selection;
+}
+
+.ms-cui-cg-or.ms-cui-cg{
+border-top-color:$selection;
+}
+.ms-cui-ct-topBar-or,.ms-cui-tabBody-or{
+border-color:$selection !important;
+}
+.ms-cui-cg-or .ms-cui-ct-ul{
+background-color:transparent;;
+border-color:$selection;
+}
+.ms-cui-cg-or .ms-cui-tt-s > .ms-cui-tt-a > .ms-cui-tt-span,
+.ms-cui-cg-or .ms-cui-tt > .ms-cui-tt-a:hover > .ms-cui-tt-span{
+color:$selection !important;
+}
+.ms-cui-cg-or.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a,.ms-cui-cg-or.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a:hover{
+border-color:$selection;
+}
+.ms-cui-cg-or .ms-cui-ct-first > .ms-cui-tt-a,.ms-cui-cg-or .ms-cui-ct-first > .ms-cui-tt-a:hover{
+border-left-color:$selection;
+}
+.ms-cui-cg-or .ms-cui-ct-last > .ms-cui-tt-a,.ms-cui-cg-or .ms-cui-ct-last > .ms-cui-tt-a:hover{
+border-right-color:$selection;
+}
+
+.ms-cui-ctl-light-hoveredOver,
+.ms-cui-ctl-menu:hover,
+.ms-cui-ctl-menu:focus,
+.ms-cui-dd-arrow-button:hover,
+.ms-cui-dd-arrow-button:focus,
+.ms-cui-cb-input:hover,
+.ms-cui-cb-input:focus,
+.ms-cui-spn-btnup:hover,
+.ms-cui-spn-btnup:focus,
+.ms-cui-spn-btndown:hover,
+.ms-cui-spn-btndown:focus,
+.ms-cui-ctl-hoveredOver,
+.ms-cui-ctl-large-groupPopup:hover{
+	background-color: $gray90;
+}
+
+.ms-cui-ctl-on{
+	background-color:$gray90 !important;
+	border-color:$gray70;
+}
+
+.ms-cui-spn-txtbx,
+.ms-cui-spn-btnup,
+.ms-cui-spn-btndown{
+border:1px solid $gray70;
+}
+
+.ms-promlink-button-disabled-hover
+{
+/* [ReplaceColor(themeColor:"ButtonHoverBorder")] */ border-color:$selection;
+/* [ReplaceColor(themeColor:"BackgroundOverlay")] */ background-color:$white;
+}
+
+.ms-promlink-button-enabled
+{
+/* [ReplaceColor(themeColor:"ButtonBorder")] */ border-color:$gray70;
+/* [ReplaceColor(themeColor:"BackgroundOverlay")] */ background-color:$white;
+}
+
+.ms-promlink-button-enabled-hover,.ms-promlink-button-enabled:hover
+{
+/* [ReplaceColor(themeColor:"ButtonHoverBorder")] */ border-color:$selection;
+/* [ReplaceColor(themeColor:"ButtonHoverBackground")] */ background-color:$selection;
+}
+
+.ms-promlink-button-enabled-pressed
+{
+/* [ReplaceColor(themeColor:"ButtonPressedBorder")] */ border-color:$selection;
+/* [ReplaceColor(themeColor:"ButtonPressedBackground")] */ background-color:$selection;
+}
+
+.ms-templatepickerselected div{
+padding:3px 5px 3px 5px;
+position:relative;
+bottom:-2px;
+/* [ReplaceColor(themeColor:"BackgroundOverlay",opacity:"1")] */ background-color:$white;
+/* [ReplaceColor(themeColor:"Lines")] */ border:1px solid $gray70;
+border-bottom-width:0px;
+white-space:nowrap;
+}
+
+table.ms-toolbar-togglebutton-on > tbody > tr > td > a{
+/* [ReplaceColor(themeColor:"AccentText")] */ color:$primary-color;
+}
+
+#suiteBarLeft
+{
+/* [ReplaceColor(themeColor:"SuiteBarBackground")] */ background-color: $gray60;
+/* [ReplaceColor(themeColor:"SuiteBarText")] */ color:$white;
+width:100%;
+vertical-align:middle;
+}
+
+.ie8 #suiteBar {
+	height:25px;
+}
+
+
+
+.ms-core-suiteLink-a:hover
+{
+text-decoration:none;
+/* [ReplaceColor(themeColor:"SuiteBarHoverBackground")] */ background-color: $gray40;
+}
+.ms-core-needIEFilter .ms-core-suiteLink-a:hover {
+/* [ReplaceColor(themeColor:"SuiteBarHoverBackground",opacity:"1")] */ background-color:$gray40;
+}
+
+a.ms-core-suiteLink-disabled,
+a.ms-core-suiteLink-disabled:hover
+{
+/* [ReplaceColor(themeColor:"SuiteBarHoverText")] */ color:$selection;
+cursor:default;
+text-decoration:none;
+}
+
+a.ms-roamingapps-goback:hover,a.ms-roamingapps-goback:focus
+{
+/* [ReplaceColor(themeColor:"CommandLinksHover")] */ color:$primary-color;
+}
+a.ms-roamingapps-goback:active
+{
+/* [ReplaceColor(themeColor:"CommandLinksPressed")] */ color:$lightred;
+}
+
+.ms-mrudocs-separator
+{
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom:1px solid $gray70;
+width:158px;
+padding-top:15px;
+}
+
+a.ms-missinglink
+{
+text-decoration:none;
+/* [ReplaceColor(themeColor:"Hyperlink")] */ border-bottom:1px dashed $primary-color;
+}
+
+.ms-tileview-tile-content
+{
+/* [ReplaceColor(themeColor:"EmphasisBackground")] */ background-color:$primary-color;
+position:relative;
+overflow:hidden;
+}
+
+.ms-tileview-tile-selected,.ms-tileview-tile-selectionBox,.ms-tileview-tile-selectionBox > *,.ms-tileview-tile-selectionBox:hover > *
+{
+/* [ReplaceColor(themeColor:"EmphasisBackground")] */ background-color:$primary-color;
+}
+
+.ms-navresizer-vertical{
+cursor:e-resize;
+width:5px;
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border-left:1px solid $gray70;
+margin-left:1px;
+}
+.ms-navresizer-horizontal{
+margin-right:1px;
+cursor:n-resize;
+height:5px;
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border-top:1px solid $gray70;
+/* [ReplaceColor(themeColor:"SubtleEmphasisBackground")] */ background-color:$gray95;
+}
+
+.ms-inlineSearch-searchImgSpanHoverHighlight
+{
+/* [ReplaceColor(themeColor:"ButtonHoverBackground")] */ border:none;
+/* [ReplaceColor(themeColor:"ButtonHoverBackground")] */ background-color:$white;
+}
+
+.ms-inlineSearch-imgHoverHighlight
+{
+/* [ReplaceColor(themeColor:"ButtonHoverBackground",opacity:"1")] */ background-color:$white;
+}
+
+.ms-inlineSearch-searchImgHover
+{
+	top: -133px;
+	left: -152px;
+	position: relative;
+}
+
+.ms-core-needIEFilter .ms-storefront-appiconspan {
+	background-color:transparent;
+	/* [ReplaceColor(themeColor:"EmphasisBackground")] */ -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ff999999,endColorstr=#ff999999)";
+}
+.ms-core-needIEFilter .ms-emphasis {
+	background-color:transparent;
+	/* [ReplaceColor(themeColor:"EmphasisBackground")] */ -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ff999999,endColorstr=#ff999999)";
+}
+.ms-core-needIEFilter .ms-ContentAccent1-bgColor{/* [ReplaceColor(themeColor:"ContentAccent1")] */ -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ff999999,endColorstr=#ff999999)";}
+.ms-core-needIEFilter .ms-EmphasisBackground-bgColor{/* [ReplaceColor(themeColor:"EmphasisBackground")] */ -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ff999999,endColorstr=#ff999999)";}
+.ms-core-needIEFilter .ms-fb-selected {
+	background-color:transparent;
+	/* [ReplaceColor(themeColor:"EmphasisBackground")] */ -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ff999999,endColorstr=#ff999999)";
+}
+.ms-core-needIEFilter .ms-comm-reputationTextBestResponse {
+	background-color:transparent;
+	/* [ReplaceColor(themeColor:"EmphasisBackground")] */ -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ff999999,endColorstr=#ff999999)";
+}
+.ms-core-needIEFilter #suiteBarLeft {
+	background-color:transparent;
+	/* [ReplaceColor(themeColor:"SuiteBarBackground")] */ -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ff999999,endColorstr=#ff999999)";
+}
+
+
+/* Fix Welcome page layout issue -GS */
+.welcome-links .clearer,.welcome-splash .clearer { clear:none; }
+.welcome-links .tableCol-50, .welcome-splash .tableCol-50 { vertical-align: top; }
+
+
+/* Fix Light Text on All Documents */
+ .ms-pivotControl-surfacedOpt-selected{
+ 	color: gray;
+ }
+
+ .ms-breadcrumb-anchor {
+ 	position: relative;
+	top: -5px; left:-2px
+ }
+
+
+/*Added 2/25 -GSS from alt.css */
+#sideNavBox {
+	margin-top: 6px;
+	margin-left: 10px;
+	padding-left: 12px;
+}
+
+
+#sideNavBox ul.root>li>a,#sideNavBox ul.root>li>span {
+	font-weight: bold;
+	font-size: 13px;
+}
+.static a:hover {
+	text-decoration: underline;
+}
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > .ms-core-listMenu-item {
+	padding-left: 24px;
+	font-size: 12px;
+}
+
+ .cbs-List li:hover {
+	background-color: $gray90;
+}
+
+.s4-itm-selected>*, .s4-itm-selected:hover>* {
+	background-color: $gray90;
+	border: 1px solid transparent;
+}
+
+
+/*	CORRECTIONS TO SOCIAL STYLES
+	------------------------------------------------------------------------- */
+
+.ms-socialDataFrameContents {
+   font-size: 8pt;
+   /* [ReplaceColor(themeColor: "BodyText")] */ color: $gray30;
+}
+.ms-socialDataFrameContents a:hover {
+    text-decoration: underline;
+}
+.ms-socialDataFrameContents a:link, .ms-socialDataFrameContents a:visited {
+    /* [ReplaceColor(themeColor: "Hyperlink")] */ color: #d0181a;
+    text-decoration: none;
+}
+
+div.ms-TagCloud {
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.ms-TagCloud .spacer { margin-right:1em; }
+.ms-TagCloud .rank1 { font-size:100%; }
+.ms-TagCloud .rank2 { font-size:125%; }
+.ms-TagCloud .rank3 { font-size:150%; }
+.ms-TagCloud .rank4 { font-size:175%; }
+.ms-TagCloud .rank5 { font-size:200%; }
+.ms-TagCloud .rank6 { font-size:225%; }
+.ms-TagCloud .rank7 { font-size:250%; }
+.ms-TagCloud .rank8 { font-size:275%; }
+.ms-TagCloud .rank9 { font-size:300%; }
+div.ms-TagCloudLink a:link{
+	/* [ReplaceColor(themeColor: "Dark1-Medium")] */
+	color: $gray20;
+}
+div.ms-TagCloudLink a:visited{
+	/* [ReplaceColor(themeColor: "Dark1-Medium")] */
+	color: $gray20;
+}
+div.ms-TagCloudLink a:hover{
+	/* [ReplaceColor(themeColor: "Light1")] */
+	color: $white;
+	/* [ReplaceColor(themeColor: "Hyperlink")] */
+	background-color: $primary-color;
+	text-decoration: none;
+}
+.ms-socialCommentContents {
+    width: 100%;
+    /* [ReplaceColor(themeColor: "BodyText")] */ color: $gray30;
+}
+.ms-socialCommentContents a:hover {
+    text-decoration: underline;
+}
+.ms-socialCommentContents a:link, .ms-socialCommentContents a:visited {
+    /* [ReplaceColor(themeColor: "Hyperlink")] */ color: $primary-color;
+    text-decoration: none;
+}
+.ms-socialCommentEdit {
+	background-color: $white;
+	font-size: 8pt;
+}
+.ms-socialCommentEdit .socialcomment-editbox {
+	width: 100%;
+	border: thin inset;
+	overflow-y: auto;
+}
+.ms-socialCommentLoading {
+	text-align: right;
+}
+.ms-socialCommentItem {
+	width: 100%;
+	font-size: 8pt;
+}
+.ms-socialCommentItem .socialcomment-top {
+	vertical-align: top;
+	padding-top:0px;
+}
+.ms-socialCommentItem .socialcomment-bottom {
+	padding-bottom:24px;
+}
+.ms-socialCommentItem .socialcomment-pagecount{
+	vertical-align: top;
+	padding:0px 0px 10px;
+}
+.ms-socialCommentPaging {
+	width: 100%;
+	font-size: 8pt;
+	padding-bottom: 7px;
+}
+.ms-socialCommentPaging .socialcomment-pagelink {
+	color: $primary-color;
+	text-decoration: none;
+	vertical-align: top;
+	padding: 3px 3px;
+}
+.ms-socialCommentItem .socialcomment-image{
+	vertical-align: top;
+	width:32px;
+	height:32px;
+	margin-top: 1px;
+	border: 0px;
+}
+.ms-socialCommentItem .socialcomment-image img{
+	text-align: center;
+	padding:2px;
+	border: 1px solid $gray70;
+}
+.ms-socialCommentItem .socialcomment-IMPawn {
+	vertical-align: top;
+	width:12px;
+	height:12px;
+	margin: 0px;
+	padding: 1px 0px;
+	border:0px;
+}
+.ms-socialCommentItem .socialcomment-username a:link{
+	color: #1d71b6;
+	text-align: left;
+}
+.ms-socialCommentItem .socialcomment-username a:visited{
+	color: #1d71b6;
+	text-align: left;
+}
+.ms-socialCommentItem .socialcomment-username a:hover{
+   text-decoration: underline;
+ }
+.ms-socialCommentItem .socialcomment-contents {
+	color: $gray40;
+	width: 390px;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+.ms-socialCommentItem .socialcomment-contents-TRC {
+	color: $gray40;
+	width: 505px;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+.ms-socialCommentItem .socialcomment-time{
+	color: $gray50;
+	text-align: left;
+	padding-left: 5px;
+}
+.ms-socialCommentItem .socialcomment-cmdlink{
+	text-align: right;
+}
+.ms-socialCommentItem .socialcomment-cmdlink a:link{
+	color: #1d71b6;
+}
+.ms-socialCommentItem .socialcomment-cmdlink a:visited{
+	color: #1d71b6;
+}
+.ms-socialCommentItem .socialcomment-cmdlink a:hover{
+   text-decoration: underline;
+ }
+.ms-socialCommentItem .separator{
+    color: $gray85;
+	border-width:0px;
+}
+.ms-socialContextFrame {
+    border-color: $gray95;
+    border-style: solid;
+    border-width: 1px;
+}
+.ms-socialContextHeader {
+	border-color: $gray95;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	height: 20px;
+	background-color: #f8f8f8;
+	padding-left: 10px;
+	font-size: 8pt;
+}
+.ms-socialContextSearchFooter{
+	border-color: $gray95;
+	border-style: solid;
+	border-width: 2px 0px 0px 0px;
+	padding: 5px;
+}
+.ms-socialContextSingleItem{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.ms-socialContextSingleItem span{
+    text-align: center;
+    width: 30px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.ms-socialContextSingleItem img{
+    vertical-align: middle;
+}
+.ms-socialThoughtHeader{
+	clear:both;
+	width:100%;
+}
+.ms-socialThoughtHeader .ms-socialThoughtHeaderTitle{
+	font-size: 12pt;
+	color: #FD8003;
+	font-weight: bold;
+}
+.ms-socialThoughtHeader img {
+	vertical-align: middle;
+}
+.ms-socialThoughtLeftHeader
+{
+	float: left;
+}
+.ms-socialThoughtModeLink{
+	font-size: 8pt;
+	padding-left: 10px;
+}
+.ms-socialThoughtPageLink{
+	font-size: 8pt;
+	float:right;
+}
+.ms-socialThoughtPageLink img {
+	vertical-align: middle;
+	cursor: pointer;
+}
+.ms-socialThoughtNavigation {
+	padding: 0 5px;
+	color:#8e8e90;
+}
+.ms-SocialThoughtContent {
+	width:100%;
+	clear:both;
+	font-size: 8pt;
+	margin: 5px 0 10px 0;
+}
+.ms-socialThoughtContentLeft{
+	clear:both;
+	float:left;
+	word-break: break-all;
+}
+.ms-socialThoughtContentRight{
+	text-align:right;
+	float: right;
+	vertical-align:middle;
+	word-break: break-word;
+}
+.ms-socialThoughtComment{
+	color:#8e8e90;
+	font-style:oblique;
+}
+.ms-socialThoughtBoxParent{
+	width: 350px;
+	padding-right: 24px;
+	float: left;
+}
+.ms-socialThoughtBoxParent2{
+	width: 557px;
+	float: right;
+}
+.ms-socialThoughtBoxMonth{
+	padding-bottom: 10px;
+}
+.ms-socialThoughtBoxView{
+	padding-bottom: 30px;
+}
+.ms-socialThoughtBoxTags{
+	padding-bottom: 30px;
+	line-height: 1.5;
+	width: 350px;
+}
+.ms-socialThoughtBoxTitle{
+	color: #003759;
+	font-size: 1.3em;
+	padding-bottom: 10px;
+}
+.ms-socialThoughtView .viewdefault{
+	color: $gray40;
+}
+.ms-socialThoughtView .viewselect{
+	color: $primary-color;
+}
+.ms-socialThoughtView a:hover{
+	color: $primary-color;
+}
+.ms-socialThoughtActivitiesTitle{
+	color: #003759;
+	font-size: 1.3em;
+}
+.ms-socialThoughtActivities .month{
+	display: inline-block;
+	color: #003759;
+	width: 124px;
+	text-align: center;
+	font-size: 1.3em;
+}
+.ms-socialThoughtActivities .tag{
+	color: $primary-color;
+	font-size: 1.3em;
+}
+.ms-socialThoughtItems .itembox{
+	border-bottom: 1px dashed $gray70;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.ms-socialThoughtItems .commentbox{
+	padding: 4px 32px;
+	word-wrap: break-word;
+}
+.ms-socialThoughtItems .viewactivities{
+	padding-left: 20px;
+	color: #003759;
+}
+.ms-socialThoughtItems .private{
+	padding-left: 24px;
+	color: #003759;
+}
+.ms-socialThoughtItems .delete{
+	padding-left: 24px;
+	color: #003759;
+}
+.ms-socialThoughtItems .selectedtag{
+	color: $white;
+	background-color: $primary-color;
+}
+.ms-socialThoughtItems .loading{
+	text-align: center;
+	padding-top: 100px;
+}
+.ms-socialThoughtItems a:hover{
+	color: $primary-color;
+}
+.ms-socialThoughtBoxTagsSort{
+	padding-bottom: 10px;
+}
+span.ms-socialThoughtSortTitle{
+	color: $black;
+}
+.ms-socialThoughtTagsSort .sortselect{
+	color: $primary-color;
+}
+.ms-socialThoughtTagsSort .sortdefault{
+	color: $gray40;
+}
+.ms-socialThoughtTagsSort a:hover{
+	color: $primary-color;
+}
+a.ms-socialThoughtTagSelect:link{
+	color: $white;
+	background-color: $primary-color;
+}
+a.ms-socialThoughtTagDefault:link{
+	color: $gray20;
+}
+.ms-socialRecommendedTags {
+	border-color : $gray90;
+	border-style : solid;
+	border-width : 1px;
+	max-width: 100%;
+}
+.ms-socialItems {
+	padding : 10px;
+}
+.ms-socialStandardheader {
+    font-size: 10pt;
+    padding-bottom: 10px;
+    text-align: left;
+    color: #202122;
+}
+.ms-socialTagInputBox {
+    width: 100%;
+    min-height: 28px;
+    border-style: inset;
+    border-width : 1px;
+    /* [ReplaceColor(themeColor: "BackgroundOverlay",opacity:"1")] */ background-color: #fff;
+    /* [ReplaceColor(themeColor: "BackgroundOverlay")] */ background-color: rgba( 255, 255, 255, 0.85 );
+}
+.ms-socialTagPrivateCheckBox {
+    font-size: 11px;
+    text-align: left;
+}
+.ms-socialTagSaveButton {
+    text-align: right;
+}
+.ms-socialCommentInputBox {
+    font-size: 8pt;
+    word-wrap: break-word;
+    word-break: keep-all;
+    white-space: normal;
+    min-height: 16px;
+    border: thin inset;
+    /* [ReplaceColor(themeColor: "BackgroundOverlay",opacity:"1")] */ background-color: #fff;
+    /* [ReplaceColor(themeColor: "BackgroundOverlay")] */ background-color: rgba( 255, 255, 255, 0.85 );
+}
+.ms-socialCommentInputBoxBorder {
+	border-color : #b2b2b2;
+	border-style : solid;
+	border-width : 1px;
+}
+.ms-socialDataRibbonContents {
+	font-size: 11px;
+}
+.ms-socialWPSeparatorTop{
+	Width: 100%;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #B6BABF;
+}
+.ms-socialWPSeparatorBottom{
+	Width: 100%;
+	padding-bottom: 10px;
+}
+.ms-socialTagInformationLabel{
+	padding-top: 20px;
+	padding-bottom: 3px;
+	color: $black;
+}
+.ms-socialTagInformationDescription{
+	padding-top: 10px;
+}
+div.ms-taggedItemsView{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+div.ms-taggedItemsView span.view{
+	color: $black;
+}
+div.ms-taggedItemsView a.default{
+	color: $gray40;
+}
+div.ms-taggedItemsView a.select{
+	color: $primary-color;
+}
+div.ms-taggedItemsView a:hover{
+	color: $primary-color;
+	text-decoration: underline;
+}
+.ms-taggedItems .itemTbl{
+	width: 100%;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	border: 0;
+
+}
+.ms-taggedItems .lineArea{
+	height: 1.5em;
+}
+.ms-taggedItems td.iconArea{
+	width: 42px;
+}
+.ms-taggedItems img.itemIcon{
+	vertical-align: middle;
+	width: 32px;
+	height: 32px;
+}
+.ms-taggedItems img.itemIconSub{
+	vertical-align: middle;
+	padding-right: 6px;
+	width: 16px;
+	height: 16px;
+}
+.ms-taggedItems table:hover{
+	background-color: $gray95;
+}
+.ms-taggedItems .separator{
+	Width: 100%;
+	border-bottom: 1px dashed $gray80;
+}
+.ms-taggedItems .seeAll{
+	padding-top: 10px;
+}
+div.ms-taggedItems a.itemTitle{
+	color: $gray20;
+}
+div.ms-taggedItems a.relTag{
+	color: $primary-color;
+}
+div.ms-taggedItems a.relTag:hover{
+	color: #0068ac;
+}
+div.ms-taggedItems a.people{
+	color: $primary-color;
+}
+div.ms-taggedItems a.people:hover{
+	color: #0068ac;
+}
+.ms-socialTagInfoPanel {
+    /* [ReplaceColor(themeColor:"Accent1",themeTint:"0.10")] */ background: #F8FCFF;
+    /* [ReplaceColor(themeColor:"Accent1-Lighter")] */ border: solid 1px #91CDF2;
+    padding: 10px;
+}
+.ms-socialTagInfoTitle {
+    font-size: 1.4em;
+}
+.ms-socialTagInfoTitle span {
+    color: $primary-color;
+}
+.ms-socialTagInfoRelatedInfo {
+    padding-left: 20px;
+}
+.ms-socialGetConnectedTermAdder{
+	margin-top: 5px;
+}
+.ms-socialGetConnectedTermAdder a{
+    font-size: 1.3em;
+    margin-left: 6px;
+}
+.ms-socialGetConnectedTermAdder span{
+    font-size: 1.3em;
+    margin-left: 6px;
+}
+.ms-socialGetConnectedPeopleSearch{
+	margin-top: 5px;
+}
+.ms-socialGetConnectedPeopleSearch img{
+	vertical-align: middle;
+}
+.ms-socialGetConnectedPeopleSearch a{
+    margin-left: 6px;
+}
+.ms-socialDialogTab{
+    height: 22px;
+    min-height: 22px !important;
+}
+.ms-socialDialogTab ul{
+    margin-left: 8px;
+    margin-right: 8px;
+    float: none;
+}
+.ms-socialDialogTab span{
+    padding-top: 2px;
+}
+.ms-socialDialogTabTopBar{
+    height: 24px;
+}
+.ms-currentRating
+{
+   text-align:right;
+   white-space:nowrap;
+   position: relative;
+   overflow: hidden;
+   width: 80px;
+   height: 16px;
+   display:inline-block;
+}
+.ms-currentRating img
+{
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   width: auto;
+   height: auto;
+   border:0px;
+}
+.ms-submitRating
+{
+   white-space:nowrap;
+   display:none;
+}
+.ms-rate1star img, .ms-rate2stars img, .ms-rate3stars img, .ms-rate4stars img, .ms-rate5stars
+{
+	position:static !important;
+}
+.ms-rating_5_new
+{
+   top: 0;
+   left: 0;
+}
+.ms-rating_4_new
+{
+   top: 0;
+   left: -16px;
+}
+.ms-rating_3_new
+{
+   top: 0;
+   left: -32px;
+}
+.ms-rating_2_new
+{
+   top: 0;
+   left: -48px;
+}
+.ms-rating_1_new
+{
+   top: 0;
+   left: -64px;
+}
+.ms-rating_0
+{
+   top: 0;
+   left: -80px;
+}
+.ms-rating_5
+{
+   top: 0;
+   left: -160px;
+}
+.ms-rating_4
+{
+   top: 0;
+   left: -176px;
+}
+.ms-rating_3
+{
+   top: 0;
+   left: -192px;
+}
+.ms-rating_2
+{
+   top: 0;
+   left: -208px;
+}
+.ms-rating_1
+{
+   top: 0;
+   left: -224px;
+}
+.ms-rating_4_5
+{
+   top: 0;
+   left: -304px;
+}
+.ms-rating_3_5
+{
+   top: 0;
+   left: -320px;
+}
+.ms-rating_2_5
+{
+   top: 0;
+   left: -336px;
+}
+.ms-rating_1_5
+{
+   top: 0;
+   left: -352px;
+}
+.ms-rating_0_5
+{
+   top: 0;
+   left: -368px;
+}
+.ms-ratingPopup
+{
+   background-color:$gray95;
+   border:solid 1px #909090;
+   border-top:solid 1px #acb0b5;
+   border-left:solid 1px #acb0b5;
+   padding:.3em;
+   font-size:8pt;
+   color:$gray20;
+}
+
+
+
+/*Added from sandbox with no other selector above */
+
+#pageTitle {
+    font-size: 1.3em;
+    font-weight: bold;
+		color:$primary-color;
+}
+
+#s4-workspace {
+    overflow-y: scroll;
+}
+
+.ie8 .ms-cui-topBar1, .ie8 .ms-cui-topBar2, .ms-core-navigation {
+	font-weight: normal;
+}
+
+#s4-titlerow {
+    padding: 5px 0;
+}
+
+#contentBox {
+	padding-bottom: 80px;
+}
+
+
+.ms-siteactions-normal {
+	height: 32px;
+	width: 50px;
+	margin: 0;
+	padding: 0;
+	margin-right: -6px;
+}
+.ms-siteactions-hover {
+	color:$black;
+	background-color: $white;
+}
+
+.ms-menu-althov {
+	border-right:0;
+}
+.ms-menu-althov-active {
+	border-right:0
+}
+.ms-siteactions-root > span > a.ms-core-menu-root {
+	padding: 8px 7px 6px 16px;
+}
+.ms-WPBody, .ms-rtestate-field p, p.ms-rteElement-P {
+	font-weight: normal;
+	line-height: 1.4;
+	padding: 8px
+}
+
+.welcome > .ms-table > .tableCol-75 > .ms-table {
+	display:inline !important;
+}
+
+.ms-fullWidth {  /* remove bottom margin */
+	margin-bottom: 0px !important;
+}
+
+
+
+/* Fix issue with content being pushed down when next to tab web part.
+This shouldn't cause issues with other web parts */
+.tableCol-25, .tableCol-33, .tableCol-50, .tableCol-66, .tableCol-75, .full-width { vertical-align:top; }
+
+/* Override mis alignment of SP dropdowns in IE Only. See hpqc defect 577   td://sds.mst.hpqc/qcbin/DefectsModule-000000004243046514?EntityType=IBug&EntityID=577*/
+.ie a.ms-core-menu-root[style] { overflow: inherit !important; }
+
+
+/* Override alignment issue with checkbox on Best Bet Search results page */
+.ms-srch-ellipsis { margin-top:0; }
+
+
+/* Fix for smiley face alignment issue.  (IE and Chrome)   Temp Fix - this has been added to overrides file*/
+.ms-comm-likesCount { position: relative; top: 4px;}
+.ms-comm-likesMetadata { position: relative;top: -4px;}
+
+/*Fix for # of Blog comments reported by Mike */
+.ms-blog-postComments {
+position: relative;
+top: -45px;
+}
+
+/* Fix for seeing outline around "Show Additional Links" in My Favorites */
+#1SPS_QLMICSRCHRES_Link { outline-style: none;}
+
+/* Shows multiple people per line when doing a people search
+http://sharepoint-community.net/profiles/blogs/sharepoint-2013-displaying-people-search-results-in-multiple
+
+.ms-srch-people-outerContainer {
+ min-height: 50px;
+ margin: 0 0 0 -10px;
+ padding-bottom: 10px;
+ padding-left: 10px;
+ float: left;
+ clear: none;
+}
+ */
+
+
+/******************************************************************
+*******************************************************************
+
+Skype Presense Indictators
+
+ *****************************************************************/
+.ms-srch-siteSearchResults {
+	width: 100%;
+}
+.ms-srch-item-link {
+	font-weight: bold;
+	font-size: 12pt;
+	line-height: 1;
+}
+.ms-srch-item-path {
+	color: $gray50;
+}
+.ms-srch-siteSearchResults {
+	padding-top: 15px;
+}
+.ms-srch-item-icon {
+	display: none;
+}
+
+// Search Results Hover Colors
+.ms-srch-item:hover,
+.ms-srch-resultHover:hover,
+.edisc-SearchResultItemContainer:hover {
+	background-color: $gray95;
+}
+
+// Search Results Slider and Bargraph Colors
+.ajax__multi_slider_default .inner_rail_horizontal {
+	background-color: $primary-color;
+	border-top: 1px solid $primary-color;
+	border-bottom: 1px solid $primary-color;
+}
+.slider_tick_active {
+	background-color: $lightred;
+	border: 1px solid $lightred;
+}
+.histogram_bar_active,
+.histogram_bar_inactive {
+	background-color: $gray80;
+	border-left: 1px solid $gray80;
+	border-right: 1px solid $gray80;
+	border-top: 2px solid $primary-color;
+}
+.histogram_bar_active:hover,
+.histogram_bar_inactive:hover {
+	background-color: $gray90;
+	border-left: 1px solid $gray90;
+	border-right: 1px solid $gray90;
+	border-top: 2px solid $lightred;
+}
+
+//Left Nav HoverState Color
+.ms-ref-refiner #Value > a:hover,
+.ms-ref-unsel-toggle:hover {
+	color: $primary-color;
+}
+.ms-ref-ctrl .ms-ref-selSec .ms-ref-filterSel,
+.ms-ref-ctrl .ms-ref-allSec .ms-ref-filterSel {
+	color: $primary-color;
+}
+
+//Search Results Pagination
+.ms-srch-result #Paging a:hover {
+	color: $lightred;
+}
+.ms-srch-result #PagingSelf a {
+	color: $primary-color;
+}
+
+//Prev and Next Search Arrow Positioning
+.ms-srch-pagingPrev {
+	position: absolute;
+	left: -62px;
+	top: -79px;
+	&:hover {
+		position: absolute;
+		left: -62px;
+		top: -79px;
+	}
+}
+.ms-srch-pagingNext {
+	position: absolute;
+	left: -110px;
+	top: -5px;
+	&:hover {
+		position: absolute;
+		left: -110px;
+		top: -5px;
+	}
+}
+
+// Prev and Next Search Arrow Hover Positioning
+.ms-promlink-button-enabled:hover .ms-srch-pagingNext {
+	left: -80px;
+	top: -79px;
+}
+.ms-promlink-button-enabled:hover .ms-srch-pagingPrev {
+	left: -42px;
+	top: -83px;
+}
+.ms-promlink-button-enabled-hover,
+.ms-promlink-button-enabled:hover {
+	border-color: $gray80;
+	background-color: $gray95;
+}
+
+//Search Scope in Navigation Styles
+.ms-srchnav-link:hover,
+.ms-srchnav-link-selected:hover {
+	color: $primary-color;
+}
+.ms-srchnav-link-selected:link,
+.ms-srchnav-link-selected:visited {
+	color: $primary-color;
+}
+
+//People Search Results
+.ms-srch-people-item #ContactInfo {
+	padding-left: 14px;
+	padding-bottom: 0;
+}
+.ms-srch-people-item #UserInfoContainer {
+	float: left;
+	width: 454px;
+	overflow: hidden;
+	margin-left: 75px;
+	margin-top: -70px;
+}
+.ms-srch-people-item #UserPersonaContainer {
+	width: 85px;
+}
+
+//Search Box that Appears above "Add an App"
+.ms-InlineSearch-Outline-Empty // search box outline
+{
+	height: 30px;
+	width: 188px;
+}
+.ms-InlineSearch-Outline-Focused //search box outline on hover
+{
+	height: 30px;
+	width: 188px;
+}
+.ms-InlineSearch-Outline-Baseline //search box outline on page focus
+{
+	height: 30px;
+	width: 188px;
+}
+
+//add an app search page pagination arrows
+.ms-promlink-button-right {
+	left: -204px;
+	top: -232px;
+	position: absolute;
+}
+.ms-promlink-button-right-hover {
+	left: -168px;
+	top: -236px;
+	position: absolute;
+}
+.ms-promlink-button-left-hover {
+	left: -132px;
+	top: -236px;
+	position: absolute;
+}
+.ms-promlink-button-left {
+	left: -132px;
+	top: -236px;
+	position: absolute;
+}
+
+//Media Queries associated with Search
+@media ( max-width: 680px ) {
+	.ms-srch-siteSearchResults {
+		width: 100%;
+	}
+	.ms-srch-item {
+		width: 100%;
+	}
+	.ms-srch-item-link {
+		font-weight: bold;
+		font-size: 12pt;
+		line-height: 1;
+	}
+	.ms-srch-item-path {
+		color: $gray50;
+	}
+}
+
+/* SEARCH STYLE FIXES */
+/* Search link hover color */
+.ms-srch-resultFooter a:hover {
+	color: $primary-color;
+	text-decoration: none;
+}
+/* Fixes search field web part look */
+#SearchBox {
+	white-space: nowrap;
+}
+.ms-srch-sbLarge>input {
+	margin: 1px 1px 0;
+	padding: 0 0 0 6px;
+	vertical-align: middle;
+	font-size: $fontsize;
+	width: auto;
+}
+.ms-srch-sbLarge {
+	white-space: nowrap;
+}
+
+
+.ms-spimn-presenceWrapper // Microsoft Chat Presence Indicator
+{
+	display: block;
+}
+
+//Presence indicators
+.ms-spimn-presence-online-10x10x32 {
+	left: -208px;
+	top: -187px;
+}
+.ms-spimn-presence-online-16x16x32 {
+	left: -127px;
+	top: -199px;
+}
+.ms-spimn-presence-online-5x36x32 {
+	left: -169px;
+	top: -115px;
+}
+.ms-spimn-presence-online-5x48x32 {
+	left: -36px;
+	top: -149px;
+}
+.ms-spimn-presence-online-8x72x32 {
+	left: -61px;
+	top: -75px;
+}
+.ms-spimn-presence-online-10x10x4 {
+	left: -211px;
+	top: -199px;
+}
+.ms-spimn-presence-online-16x16x4 {
+	left: -145px;
+	top: -191px;
+}
+.ms-spimn-presence-online-5x36x4 {
+	left: -176px;
+	top: -39px;
+}
+.ms-spimn-presence-online-5x48x4 {
+	left: -29px;
+	top: -149px;
+}
+.ms-spimn-presence-online-8x72x4 {
+	left: -81px;
+	top: -75px;
+}
+.ms-spimn-presence-online-oof-10x10x32 {
+	left: -199px;
+	top: -199px;
+}
+.ms-spimn-presence-online-oof-16x16x32 {
+	left: -181px;
+	top: -199px;
+}
+.ms-spimn-presence-online-oof-5x36x32 {
+	left: -169px;
+	top: -153px;
+}
+.ms-spimn-presence-online-oof-5x48x32 {
+	left: -22px;
+	top: -149px;
+}
+.ms-spimn-presence-online-oof-8x72x32 {
+	left: -71px;
+	top: -75px;
+}
+.ms-spimn-presence-online-oof-10x10x4 {
+	left: -220px;
+	top: -181px;
+}
+.ms-spimn-presence-online-oof-16x16x4 {
+	left: -163px;
+	top: -191px;
+}
+.ms-spimn-presence-online-oof-5x36x4 {
+	left: -176px;
+	top: -1px;
+}
+.ms-spimn-presence-online-oof-5x48x4 {
+	left: -15px;
+	top: -149px;
+}
+.ms-spimn-presence-online-oof-8x72x4 {
+	left: -81px;
+	top: -1px;
+}
+.ms-spimn-presence-away-10x10x32 {
+	left: -181px;
+	top: -217px;
+}
+.ms-spimn-presence-away-16x16x32 {
+	left: -215px;
+	top: -91px;
+}
+.ms-spimn-presence-away-5x36x32 {
+	left: -190px;
+	top: -115px;
+}
+.ms-spimn-presence-away-5x48x32 {
+	left: -155px;
+	top: -51px;
+}
+.ms-spimn-presence-away-8x72x32 {
+	left: -131px;
+	top: -75px;
+}
+.ms-spimn-presence-away-10x10x4 {
+	left: -169px;
+	top: -209px;
+}
+.ms-spimn-presence-away-16x16x4 {
+	left: -197px;
+	top: -19px;
+}
+.ms-spimn-presence-away-5x36x4 {
+	left: -155px;
+	top: -101px;
+}
+.ms-spimn-presence-away-5x48x4 {
+	left: -155px;
+	top: -1px;
+}
+.ms-spimn-presence-away-8x72x4 {
+	left: -131px;
+	top: -1px;
+}
+.ms-spimn-presence-away-oof-10x10x32 {
+	left: -215px;
+	top: -109px;
+}
+.ms-spimn-presence-away-oof-16x16x32 {
+	left: -197px;
+	top: -1px;
+}
+.ms-spimn-presence-away-oof-5x36x32 {
+	left: -141px;
+	top: -151px;
+}
+.ms-spimn-presence-away-oof-5x48x32 {
+	left: -134px;
+	top: -149px;
+}
+.ms-spimn-presence-away-oof-8x72x32 {
+	left: -1px;
+	top: -1px;
+}
+.ms-spimn-presence-away-oof-10x10x4 {
+	left: -157px;
+	top: -209px;
+}
+.ms-spimn-presence-away-oof-16x16x4 {
+	left: -197px;
+	top: -37px;
+}
+.ms-spimn-presence-away-oof-5x36x4 {
+	left: -190px;
+	top: -77px;
+}
+.ms-spimn-presence-away-oof-5x48x4 {
+	left: -141px;
+	top: -1px;
+}
+.ms-spimn-presence-away-oof-8x72x4 {
+	left: -11px;
+	top: -1px;
+}
+.ms-spimn-presence-blocked-10x10x32 {
+	left: -145px;
+	top: -209px;
+}
+.ms-spimn-presence-blocked-16x16x32 {
+	left: -197px;
+	top: -55px;
+}
+.ms-spimn-presence-blocked-5x36x32 {
+	left: -155px;
+	top: -139px;
+}
+.ms-spimn-presence-blocked-5x48x32 {
+	left: -127px;
+	top: -149px;
+}
+.ms-spimn-presence-blocked-8x72x32 {
+	left: -121px;
+	top: -75px;
+}
+.ms-spimn-presence-blocked-10x10x4 {
+	left: -215px;
+	top: -121px;
+}
+.ms-spimn-presence-blocked-16x16x4 {
+	left: -197px;
+	top: -73px;
+}
+.ms-spimn-presence-blocked-5x36x4 {
+	left: -190px;
+	top: -39px;
+}
+.ms-spimn-presence-blocked-5x48x4 {
+	left: -120px;
+	top: -149px;
+}
+.ms-spimn-presence-blocked-8x72x4 {
+	left: -21px;
+	top: -1px;
+}
+.ms-spimn-presence-blocked-oof-10x10x32 {
+	left: -133px;
+	top: -217px;
+}
+.ms-spimn-presence-blocked-oof-16x16x32 {
+	left: -215px;
+	top: -73px;
+}
+.ms-spimn-presence-blocked-oof-5x36x32 {
+	left: -148px;
+	top: -151px;
+}
+.ms-spimn-presence-blocked-oof-5x48x32 {
+	left: -113px;
+	top: -149px;
+}
+.ms-spimn-presence-blocked-oof-8x72x32 {
+	left: -31px;
+	top: -1px;
+}
+.ms-spimn-presence-blocked-oof-10x10x4 {
+	left: -121px;
+	top: -217px;
+}
+.ms-spimn-presence-blocked-oof-16x16x4 {
+	left: -197px;
+	top: -91px;
+}
+.ms-spimn-presence-blocked-oof-5x36x4 {
+	left: -190px;
+	top: -1px;
+}
+.ms-spimn-presence-blocked-oof-5x48x4 {
+	left: -141px;
+	top: -51px;
+}
+.ms-spimn-presence-blocked-oof-8x72x4 {
+	left: -121px;
+	top: -1px;
+}
+.ms-spimn-presence-busy-10x10x32 {
+	left: -215px;
+	top: -133px;
+}
+.ms-spimn-presence-busy-16x16x32 {
+	left: -197px;
+	top: -109px;
+}
+.ms-spimn-presence-busy-5x36x32 {
+	left: -162px;
+	top: -1px;
+}
+.ms-spimn-presence-busy-5x48x32 {
+	left: -106px;
+	top: -149px;
+}
+.ms-spimn-presence-busy-8x72x32 {
+	left: -41px;
+	top: -1px;
+}
+.ms-spimn-presence-busy-10x10x4 {
+	left: -109px;
+	top: -217px;
+}
+.ms-spimn-presence-busy-16x16x4 {
+	left: -197px;
+	top: -127px;
+}
+.ms-spimn-presence-busy-5x36x4 {
+	left: -183px;
+	top: -153px;
+}
+.ms-spimn-presence-busy-5x48x4 {
+	left: -148px;
+	top: -101px;
+}
+.ms-spimn-presence-busy-8x72x4 {
+	left: -111px;
+	top: -75px;
+}
+.ms-spimn-presence-busy-oof-10x10x32 {
+	left: -215px;
+	top: -145px;
+}
+.ms-spimn-presence-busy-oof-16x16x32 {
+	left: -215px;
+	top: -55px;
+}
+.ms-spimn-presence-busy-oof-5x36x32 {
+	left: -162px;
+	top: -39px;
+}
+.ms-spimn-presence-busy-oof-5x48x32 {
+	left: -99px;
+	top: -149px;
+}
+.ms-spimn-presence-busy-oof-8x72x32 {
+	left: -51px;
+	top: -1px;
+}
+.ms-spimn-presence-busy-oof-10x10x4 {
+	left: -97px;
+	top: -217px;
+}
+.ms-spimn-presence-busy-oof-16x16x4 {
+	left: -197px;
+	top: -145px;
+}
+.ms-spimn-presence-busy-oof-5x36x4 {
+	left: -183px;
+	top: -115px;
+}
+.ms-spimn-presence-busy-oof-5x48x4 {
+	left: -148px;
+	top: -1px;
+}
+.ms-spimn-presence-busy-oof-8x72x4 {
+	left: -61px;
+	top: -1px;
+}
+.ms-spimn-presence-donotdisturb-10x10x32 {
+	left: -220px;
+	top: -157px;
+}
+.ms-spimn-presence-donotdisturb-16x16x32 {
+	left: -19px;
+	top: -199px;
+}
+.ms-spimn-presence-donotdisturb-5x36x32 {
+	left: -162px;
+	top: -153px;
+}
+.ms-spimn-presence-donotdisturb-5x48x32 {
+	left: -78px;
+	top: -149px;
+}
+.ms-spimn-presence-donotdisturb-8x72x32 {
+	left: -11px;
+	top: -75px;
+}
+.ms-spimn-presence-donotdisturb-10x10x4 {
+	left: -49px;
+	top: -217px;
+}
+.ms-spimn-presence-donotdisturb-16x16x4 {
+	left: -37px;
+	top: -199px;
+}
+.ms-spimn-presence-donotdisturb-5x36x4 {
+	left: -183px;
+	top: -1px;
+}
+.ms-spimn-presence-donotdisturb-5x48x4 {
+	left: -71px;
+	top: -149px;
+}
+.ms-spimn-presence-donotdisturb-8x72x4 {
+	left: -101px;
+	top: -1px;
+}
+.ms-spimn-presence-donotdisturb-oof-10x10x32 {
+	left: -208px;
+	top: -175px;
+}
+.ms-spimn-presence-donotdisturb-oof-16x16x32 {
+	left: -215px;
+	top: -19px;
+}
+.ms-spimn-presence-donotdisturb-oof-5x36x32 {
+	left: -169px;
+	top: -1px;
+}
+.ms-spimn-presence-donotdisturb-oof-5x48x32 {
+	left: -64px;
+	top: -149px;
+}
+.ms-spimn-presence-donotdisturb-oof-8x72x32 {
+	left: -21px;
+	top: -75px;
+}
+.ms-spimn-presence-donotdisturb-oof-10x10x4 {
+	left: -37px;
+	top: -217px;
+}
+.ms-spimn-presence-donotdisturb-oof-16x16x4 {
+	left: -55px;
+	top: -199px;
+}
+.ms-spimn-presence-donotdisturb-oof-5x36x4 {
+	left: -176px;
+	top: -153px;
+}
+.ms-spimn-presence-donotdisturb-oof-5x48x4 {
+	left: -1px;
+	top: -149px;
+}
+.ms-spimn-presence-donotdisturb-oof-8x72x4 {
+	left: -31px;
+	top: -75px;
+}
+.ms-spimn-presence-offline-10x10x32 {
+	left: -25px;
+	top: -217px;
+}
+.ms-spimn-presence-offline-16x16x32 {
+	left: -73px;
+	top: -199px;
+}
+.ms-spimn-presence-offline-5x36x32 {
+	left: -169px;
+	top: -39px;
+}
+.ms-spimn-presence-offline-5x48x32 {
+	left: -57px;
+	top: -149px;
+}
+.ms-spimn-presence-offline-8x72x32 {
+	left: -91px;
+	top: -75px;
+}
+.ms-spimn-presence-offline-10x10x4 {
+	left: -220px;
+	top: -169px;
+}
+.ms-spimn-presence-offline-16x16x4 {
+	left: -91px;
+	top: -199px;
+}
+.ms-spimn-presence-offline-5x36x4 {
+	left: -176px;
+	top: -115px;
+}
+.ms-spimn-presence-offline-5x48x4 {
+	left: -50px;
+	top: -149px;
+}
+.ms-spimn-presence-offline-8x72x4 {
+	left: -41px;
+	top: -75px;
+}
+.ms-spimn-presence-offline-oof-10x10x32 {
+	left: -13px;
+	top: -217px;
+}
+.ms-spimn-presence-offline-oof-16x16x32 {
+	left: -215px;
+	top: -1px;
+}
+.ms-spimn-presence-offline-oof-5x36x32 {
+	left: -169px;
+	top: -77px;
+}
+.ms-spimn-presence-offline-oof-5x48x32 {
+	left: -43px;
+	top: -149px;
+}
+.ms-spimn-presence-offline-oof-8x72x32 {
+	left: -51px;
+	top: -75px;
+}
+.ms-spimn-presence-offline-oof-10x10x4 {
+	left: -1px;
+	top: -217px;
+}
+.ms-spimn-presence-offline-oof-16x16x4 {
+	left: -109px;
+	top: -199px;
+}
+.ms-spimn-presence-offline-oof-5x36x4 {
+	left: -176px;
+	top: -77px;
+}
+.ms-spimn-presence-offline-oof-5x48x4 {
+	left: -8px;
+	top: -149px;
+}
+.ms-spimn-presence-offline-oof-8x72x4 {
+	left: -91px;
+	top: -1px;
+}
+.ms-spimn-presence-disconnected-10x10x32 {
+	left: -85px;
+	top: -217px;
+}
+.ms-spimn-presence-disconnected-16x16x32 {
+	left: -190px;
+	top: -163px;
+}
+.ms-spimn-presence-disconnected-5x36x32 {
+	left: -162px;
+	top: -77px;
+}
+.ms-spimn-presence-disconnected-5x48x32 {
+	left: -141px;
+	top: -101px;
+}
+.ms-spimn-presence-disconnected-8x72x32 {
+	left: -111px;
+	top: -1px;
+}
+.ms-spimn-presence-disconnected-10x10x4 {
+	left: -208px;
+	top: -163px;
+}
+.ms-spimn-presence-disconnected-16x16x4 {
+	left: -190px;
+	top: -181px;
+}
+.ms-spimn-presence-disconnected-5x36x4 {
+	left: -183px;
+	top: -77px;
+}
+.ms-spimn-presence-disconnected-5x48x4 {
+	left: -92px;
+	top: -149px;
+}
+.ms-spimn-presence-disconnected-8x72x4 {
+	left: -71px;
+	top: -1px;
+}
+.ms-spimn-presence-disconnected-oof-10x10x32 {
+	left: -73px;
+	top: -217px;
+}
+.ms-spimn-presence-disconnected-oof-16x16x32 {
+	left: -215px;
+	top: -37px;
+}
+.ms-spimn-presence-disconnected-oof-5x36x32 {
+	left: -162px;
+	top: -115px;
+}
+.ms-spimn-presence-disconnected-oof-5x48x32 {
+	left: -85px;
+	top: -149px;
+}
+.ms-spimn-presence-disconnected-oof-8x72x32 {
+	left: -1px;
+	top: -75px;
+}
+.ms-spimn-presence-disconnected-oof-10x10x4 {
+	left: -61px;
+	top: -217px;
+}
+.ms-spimn-presence-disconnected-oof-16x16x4 {
+	left: -1px;
+	top: -199px;
+}
+.ms-spimn-presence-disconnected-oof-5x36x4 {
+	left: -183px;
+	top: -39px;
+}
+.ms-spimn-presence-disconnected-oof-5x48x4 {
+	left: -148px;
+	top: -51px;
+}
+.ms-spimn-presence-disconnected-oof-8x72x4 {
+	left: -101px;
+	top: -75px;
+}
+
+/******************************************************************
+******************************************************************
+End Skype Presense Indicators
+
+******************************************************************/
+
+
+/* removes top nav - specifically we want this on admin pages */
+div[id$=_TopNavigationMenuV4]{
+		display: none;
+}
+
+#ctl00_PlaceHolderMain_Customization_RptControls_Theme { display:none; 	}

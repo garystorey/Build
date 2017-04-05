@@ -1,0 +1,17 @@
+@if ($branding == 'MacysPartners') {
+
+    #O365_MainLink_NavMenu {background-color:$red;}
+    #Sites_BrandBar {display:none;}
+    #O365_SubLink_ShellAboutMe, #ShellSites_BrandBar,.o365cs-nav-o365Branding .o365cs-nav-appTitleLine, #O365_SubLink_SuiteMenu_zz4_ID_PersonalizePage {display:none;}
+    #O365_MainLink_SignIn,#O365_AppTile_Sites,#O365_AppTile_Documents,#O365_AppTile_Yammer {display:none;}
+    #siteIcon {display:none;}
+    .o365cs-base .ms-bgc-tdr, .o365cs-base .ms-bgc-tdr-h:hover { background-color: $red; }
+    .o365cs-nav-appTile { background: $red !important;  /* !important needed to override inline SharePoint style */}
+    .o365cs-nav-appItem .o365cs-nav-appTileTitle span { text-align: center;}
+    .o365cs-nav-header16 .o365cs-nav-centerAlign { text-align:left;position:relative; left:-40px;}
+    .o365cs-nav-brandingText {display:none !important;}
+    .welcome-content { display:none;padding:0 !important;}
+    .ms-webpart-zone .ms-fullWidth { margin-bottom: 20px !important; }
+    .ms-table .ms-webpart-zone { padding:0;}
+    .cell-margin { margin: 0px 5px 5px 0px;}
+}

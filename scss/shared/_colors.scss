@@ -1,0 +1,71 @@
+///*******************************
+//* COLORS
+//********************************/
+$primary-color: '';
+$selection: '';
+
+//* BLACK, WHITE, GRAY  */
+$black : #000;
+$gray10 : lighten($black,10%); //#1a1a1a
+$gray20 : lighten($black,20%); //#333
+$gray30 : lighten($black,30%); //#4d4d4d
+$gray40 : lighten($black,40%); //#666
+$gray50 : lighten($black,50%); //gray
+$gray60 : lighten($black,60%); //#999
+$gray70 : lighten($black,70%); //#b3b3b3
+$gray75 : lighten($black,75%); //#bfbfbf
+$gray80 : lighten($black,80%); //#ccc
+$gray85 : lighten($black,85%); //#d9d9d9
+$gray90 : lighten($black,90%); //#e6e6e6
+$gray95 : lighten($black,95%); //#f2f2f2
+$white : #fff;
+
+$offwhite : #fefefe;
+$macysgrey: #888;
+
+//* COLOR ADJUSTMENTS */
+$color-adjust: 25%;
+
+//* RED */
+$red: #a41214;
+$lightred: #E11A2B;
+$selred: desaturate( $lightred, $color-adjust );
+$lighterred : #C87172;
+$darkred : #620B0C;
+
+//* GREEN */
+$green: #009933;
+$lightgreen: #66C285;
+$darkgreen : #005C1F;
+
+//* BLUE */
+$blue: #0033CC;
+$lightblue:  #6685E0;
+$darkblue : #001F7A;
+$steelblue: #466A89;
+$skyblue: lighten( $steelblue, $color-adjust );
+
+$bloomies :  #592c82; // #4d5879;
+$selbloomies : desaturate( $bloomies, $color-adjust );
+
+
+//* YELLOW/GOLD */
+$yellow : #A3A300;
+$lightyellow : #CCCC00;
+$darkyellow : #525200;
+$gold : #907951;
+$lightgold :lighten( $gold, $color-adjust );
+
+
+//* PURPLE */
+$purple: #592c82;
+$lightpurple: #B23AEE;
+$darkpurple : darken($purple, $color-adjust );
+
+//* set primary color based on branding */
+$primary-color : $red;
+$selection : $selred;
+@if ($branding == 'Bloomingdales') {
+  $primary-color : $bloomies;
+  $selection : $selbloomies;
+}

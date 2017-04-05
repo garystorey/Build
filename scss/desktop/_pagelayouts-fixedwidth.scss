@@ -1,0 +1,45 @@
+/*
+
+#macys-fixedwidth-landingpage {
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    max-width:976px !important;
+    width:976px !important;
+    min-width:976px;
+    margin:0 auto !important;
+    overflow:hidden;
+}
+*/
+/* Override styles that are used on OOB webparts */
+
+/*
+#macys-fixedwidth-landingpage .ms-WPBody,
+#macys-fixedwidth-landingpage .ms-rtestate-field p,
+#macys-fixedwidth-landingpage p.ms-rteElement-P {
+  overflow: hidden !important;
+  padding:0;
+}
+#macys-fixedwidth-landingpage .ms-webpart-zone {
+  padding:0; margin:2px !important;
+}
+#macys-fixedwidth-landingpage .ms-webpartzone-cell {
+  margin: 2px auto;
+}
+#macys-fixedwidth-landingpage .tableCol-33 {
+    display:table-cell;
+    vertical-align:top;
+    min-width:0;
+    margin:0;
+}
+#macys-fixedwidth-landingpage .m-tableRow {
+    display:table-row;
+    vertical-align:top;
+}
+#macys-fixedwidth-landingpage .m-tableCol {
+    display:table-cell;
+    vertical-align:top;
+}
+#contentBox {margin:0;}
+#sideNavBox { width:0;display:none; }
+*/

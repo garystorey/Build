@@ -1,0 +1,387 @@
+
+
+/* WEB PART STYLING */
+
+.ms-webpart-zone {
+	padding: 8px;
+}
+.ms-webpart-chrome-title{
+	background-color: $gray80;
+	margin-bottom: 0px; /* Removes MS space between title and content in web part*/
+}
+
+.ms-webpart-titleText {
+	margin: 5px 10px 7px 16px; /* Gives pleasing visual space to web part title*/
+	height: 27px;
+}
+.ms-webpart-titleText > a:hover{
+	color: $white;
+}
+.ms-webpart-titleText > img {
+	margin:3px 3px 6px 4px; /* Gives pleasing visual space to web part image*/
+}
+.welcome-content{
+	padding: 8px;
+}
+.ms-listviewtable{
+	width: 100%;
+}
+.ms-listviewtable td {
+	border-bottom: 1px dotted $gray90;
+}
+.ms-listviewtable th {
+	border-bottom: 1px solid $gray90;
+	background-color: $gray95;
+	}
+.ms-WPBorder{
+	border:3px solid $gray80;
+}
+
+/* Spiffies up the calendar web part */
+
+.ms-acal-header {
+	border-bottom: 1px solid $gray90;
+	background-color: $gray95;
+	padding: 14px 10px 10px 12px;
+	margin: -1px -3px -1px -3px;
+}
+.ms-acal-display {
+	font-size: $fontsize+2;
+}
+
+/* Fixes web part dropdown carat clipping and checkbox position */
+
+.ms-webpart-menuArrowSpan {
+	margin: -3px;
+}
+.ms-webpart-controlBox {
+	padding: 13px 11px 0 0;
+	white-space: nowrap;
+	}
+/* Fixes callout X clipping and position
+.js-callout-closeButton {
+	height: 23px;
+	width: 23px;
+	margin-right: 8px;
+}
+ */
+
+ .ms-pivotControl-surfacedOpt-selected{
+ 	color: gray;
+ }
+
+.ms-summarystandardbody .ms-vb {
+	padding: 8px;
+}
+
+
+/* Fix for Bamboo Calendar toolbar showing through menu drop-downs per Ryan */
+.rsHeader DIV {
+	z-index: 1 !important;
+}
+a.ms-storefront-selectanchor, a.ms-storefront-selectanchor:link {
+	color: $primary-color;
+}
+
+.js-callout-closeButton {
+	padding: 7px;
+}
+
+
+
+
+
+/* --------------------------------------------------------------
+SLIDER
+----------------------------------------------------------------*/
+
+
+/*Default Styles for Slides */
+.macys-slider {
+	padding:0px; margin:0;
+	position:relative; overflow:hidden; z-index:1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border:1px solid $gray50;
+    background-color: $gray70;
+}
+
+	.macys-slider a{ color:$gray50; text-decoration:none; }
+
+	/*IE Selection */
+	.macys-slider::selection { background: transparent; }
+	/*Other browsers Selection */
+	::selection.macys-slider, ::-moz-selection.macys-slider { background: transparent; }
+
+	.macys-slide {
+		position:relative;
+		padding:0; margin:0;
+		width:100%; height:100%;
+	}
+
+		.macys-slide img {
+			padding:0; margin:0 auto;
+			height:auto; max-width:100%;
+		}
+
+		.macys-slide p {
+			margin:0 5px 5px 5px;
+			overflow:hidden; text-overflow: ellipsis;
+		}
+
+		.macys-slide h3 { margin:5px 10px 10px 0px;}
+
+		.macys-slide-overlay {
+			z-index:15; position:absolute; top:0; left:0;
+			display:none;
+			height:80%; width:99%;
+			background:transparent;
+		}
+
+			.macys-slide-overlay span {
+					border:1px solid $white;
+					padding:10px;
+					opacity:.4;
+					background-color:$black;
+					border-radius:50%;
+					position:absolute; top:100px; left:195px;
+					text-decoration:none; text-align:center; line-height:75px;
+					height:61px; width:61px;
+			}
+
+			.macys-slide-overlay i {
+				font-size:35px; color:$white;
+				border:0;
+				position:relative; left:3px;
+				top:-8px;
+			}
+
+		.macys-slide-image-container {
+			z-index:1; overflow-y:hidden;
+			position:absolute; top:0; left:0;
+			height:80%; width:100%;
+		}
+
+		.macys-slide-text-container {
+			z-index:2;
+			margin:0 auto; padding:40px 10px 10px 10px;
+			text-overflow: ellipsis; overflow-y:hidden;
+			height:80%; width:90%;
+		}
+
+		.macys-slide-text-container p { opacity:1; line-height:1.33;  }
+
+		/* Text Only Styles */
+		.macys-slide-text { background-color: $gray80;color:$black; }
+			.macys-slide-text .macys-slide-overlay { height:0;width:0; }
+			.macys-slide-text .macys-slide-image-container { height:0; width:0; display:none; }
+
+			.macys-slide-text .macys-slide-text-container {
+			position:absolute; top:0;left:0; width:100%; height:100%;
+				@include radial($gray30); padding:10px;margin:0;
+			}
+
+			.macys-slide-text .macys-slide-text-container p {
+					opacity:1; overflow-y:hidden;
+					color:$white;
+					text-overflow:ellipsis;
+			}
+
+
+		/* Image and Text Styles */
+		.macys-slide-image { color:darken($white,3); background-color:$black; }
+			.macys-slide-image .macys-slide-image-container { height:100%;}
+			.macys-slide-image .macys-slide-image-container img { min-width:100%; }
+
+			.macys-slide-image .macys-slide-text-container {
+				padding:5px; margin:0;
+				width:100%; height:23%; min-height:23%; max-height:23%;
+				background: rgba(0,0,0,0.7); color:$white;
+				position:absolute; bottom:0px; left:0;
+			}
+				.lt-ie9 .macys-slide-image .macys-slide-text-container {
+					background: #000;
+					opacity:.7;
+				}
+
+				.macys-slide-image .macys-slide-text-container p {
+					opacity:1; overflow-y:hidden;
+					color:$white;
+					margin:5px;
+					text-overflow:ellipsis;
+
+				}
+
+		/* VideoImage and Text Styles  */
+		.macys-slide-video { color:darken($white,3); background-color:$black; }
+
+			.macys-slide-video .macys-slide-overlay { height:75%; width:100%; display:block; }
+
+			.macys-slide-video .macys-slide-image-container { height:100%; }
+			.macys-slide-video .macys-slide-image-container img { min-width:100%; }
+
+
+			.macys-slide-video .macys-slide-text-container {
+				padding:5px; margin:0; opacity:0.7;
+				width:100%; height:23%; min-height:23%; max-height:23%; background: $black;
+				position:absolute; bottom:0px; left:0;
+			}
+				.macys-slide-video .macys-slide-text-container p {
+					opacity:1; color:$white;
+					margin:5px;
+				}
+
+
+/* Nav boxes */
+/*IE Selection */
+.macys-slider-nav::selection { background: transparent; }
+/*Other browsers Selection */
+::selection.macys-slider-nav, ::-moz-selection.macys-slider-nav { background: transparent; }
+
+.macys-slider-nav  {
+	position:absolute; top:0px; right:0; z-index:5;
+	width:150px; height:100%;
+	padding:0;margin:0;
+	background-color:$gray60;
+	-webkit-box-shadow: -2px 0px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    -2px 0px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         -2px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.macys-slider-nav-areas {
+	width:100%;
+	text-align:center;
+	height:48px;
+	margin:0;padding:0;
+	z-index:6;
+}
+	.macys-slider-nav-area {
+		border-bottom:1px solid $gray40;
+		background-color:$gray50; color:$gray80;
+		text-transform: uppercase;
+		text-align:center;
+		display:inline-block;
+		width:50%;height:48px;
+		line-height:48px;
+		margin:0;padding:0;
+		vertical-align:middle;
+		float:left;
+		cursor:pointer;
+		position:relative;
+		font-weight:bold;
+	}
+	.macys-slider-nav-area-bu {
+	}
+
+	.macys-slider-nav-area-arrow {
+		position: relative;
+		top: -35px;
+	}
+
+	.macys-slider-nav-area-selected {
+		background-color:$gray70;
+		color:$white;
+	}
+
+
+.macys-slide-title {
+	height:50px;
+	border-bottom:1px solid $gray50;
+	cursor: pointer;
+	color: $white;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding:0;margin:0;
+	max-width:150px;
+}
+
+
+.macys-slide-title p {
+	margin:0;padding:2px 4px;
+	/*text-shadow: 1px 1px 0px rgba(0, 0, 0, .25);	*/
+	font-size:11px;
+	height:100%;width:99%;
+	vertical-align:middle;
+}
+
+
+.macys-slider-active {
+	background-color: $gray80;
+	border: 1px solid $white;
+	color: $black;
+}
+.macys-slider-allitems {
+	position:absolute; top:10px; left:10px;
+	background-color:transparent;
+	width:40px;
+	color:$white;
+	z-index:9;
+}
+/* Helpers */
+
+.macys-slider-hide { display:none; }
+.macys-slider-show { display:block; }
+
+
+
+/* Macys Tabs */
+.macys-tab-container {
+	width:100%; min-width:100%; max-width:100%;
+}
+
+.macys-tab-headers {
+	list-style:none; margin:2px 0 10px 0; padding:0; display:inline-block;
+}
+
+	.macys-tab-headers li {
+		display:inline-block;
+	}
+
+.macys-tab-header {
+      background-color:$gray85;  color:$gray40;
+      border:3px solid $gray80;
+      padding:1px 1px 3px 1px; margin:0; margin-right:5px;
+      cursor:pointer; height:33px;
+      position:relative; z-index:0;
+			/*
+			max-width: 150px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			*/
+}
+
+	.macys-tab-header span { padding:2px 7px; }
+
+	.macys-tab-header-line {
+    	height:2px; width:100%; margin:0px auto 2px auto;
+    	background-color: transparent;
+	}
+
+	.macys-tab-selected.macys-tab-header {
+		color:$gray40; background-color:$offwhite;
+		border:3px solid $gray80; border-bottom:0;
+		font-weight:bold; cursor:default;
+	}
+
+	.macys-tab-selected .macys-tab-header-line {
+    	background-color:$primary-color;
+	}
+
+.macys-tab-contentarea {
+    padding:7px 10px 10px 10px;
+    background-color:$offwhite; border:3px solid $gray80;
+    margin-top:-13px !important;
+    z-index:1; overflow:auto;
+}
+
+.macys-tab-hide, .macys-tab-ignore {
+	display:none;
+}
+
+
+//Fix MyLinks webpart issue
+.groupHide {display:none;}
+.groupShow {display:table-row;}
+

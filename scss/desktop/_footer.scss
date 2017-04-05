@@ -1,0 +1,87 @@
+
+
+ @if ($branding != 'MacysPartners') {
+
+
+    /* Footer container with line separator above is padded and centered */
+    #MacysFooter {
+        height: auto;
+        text-align: center;
+        border-top: 1px solid $gray70;
+        margin: 20px 20px 0px 20px;
+        padding: 15px 20px 20px 20px;
+    }
+    /* Footer hyperlinked text */
+    #MacysFooter .macys-footer-item,
+    #MacysFooter .macys-footer-item:link {
+        font-size: 13px;
+        color: $gray60;
+        text-decoration: none;
+        margin-left: -3px;
+        margin-top: 25px;
+        padding-top: 12px;
+        font-weight: normal;
+    }
+    #MacysFooter .macys-footer-item:visited {
+        text-decoration: none;
+    }
+    #MacysFooter .macys-footer-item:hover {
+        color: $primary-color;
+        text-decoration: underline;
+    }
+    #MacysFooter .macys-footer-item:hover img {
+        text-decoration: none;
+    }
+    #MacysFooter .macys-footer-item:active {
+        text-decoration: none;
+    }
+    #MacysFooter .macys-footer-item a,
+    #MacysFooter .macys-footer-item a:link,
+    #MacysFooter .macys-footer-item a:visited,
+    #MacysFooter .macys-footer-item a:hover,
+    #MacysFooter .macys-footer-item a:active {
+        text-decoration: none;
+    }
+    /* Character separating hyperlinked text */
+    .macys-footer-separator::before {
+        font-weight: normal;
+        content: "•";
+        padding: 10px;
+        color: $black;
+        font-size: $fontsize;
+    }
+    #MacysFooter a[href^='http://']:after,
+    #MacysFooter a[href^='https://']:after {
+        content: url($externalicon);
+        border: none;
+        margin-left: 3px;
+        white-space: nowrap;
+    }
+    #MacysFooter a,
+    #MacysFooter a:link,
+    #MacysFooter a:visited,
+    #MacysFooter a:hover,
+    #MacysFooter a:active {
+        text-decoration: none;
+    }
+    #MacysFooter a[href^='http://mymacys.net']:after,
+    #MacysFooter a[href^='https://mymacys.net']:after,
+    {
+        content: '' !important;
+    }
+    #MacysFooter a[href^='http://int.mymacys.net']:after,
+    #MacysFooter a[href^='https://int.mymacys.net']:after,
+    {
+        content: '' !important;
+    }
+    #MacysFooter a[href^='http://preprod.mymacys.net']:after,
+    #MacysFooter a[href^='https://preprod.mymacys.net']:after,
+    {
+        content: '' !important;
+    }
+    .macys-footer-item-image {
+        display: none;
+    }
+
+
+ }

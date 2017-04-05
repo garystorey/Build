@@ -1,0 +1,533 @@
+
+/*	Secondary Content Areas: Container and Elements
+	------------------------------------------------------------------------- */
+
+@if ($branding != 'MacysPartners') {
+
+
+.macys-secondary-content {
+  border-top: 35px solid $primary-color;
+  border-bottom: 3px solid $primary-color;
+  background-color: $gray95;
+  min-height: 400px;
+  max-width:99%;
+  padding: 10px 20px 20px;
+  max-height: calc(100% - 130px);
+}
+
+.macys-secondary-content h1 {
+  padding: 15px;
+  vertical-align: middle;
+  line-height: 100%;
+  font-size: $fontsize*2;
+  margin: 150px 150px;
+}
+
+.macys-secondary-content h1 > img {
+  padding: 15px;
+}
+
+.macys-secondary-content .dfwp-list {
+  font-size: $fontsize;
+}
+
+/* SUBNAV CONTENT
+ --------------------------------*/
+
+.macys-subnav-content {
+  float: left;
+  margin-top:4px;
+  margin-left:10px;
+  background-color: $gray95;
+  height: 100%;
+}
+
+.macys-nav-accordion {
+  min-height:100%;
+  min-width: 135px;
+  float:left;
+}
+.macys-nav-accordion-area {
+  border-right:1px solid $gray60;
+}
+
+.macys-nav-accordion ul {
+	list-style: none;
+	margin: 3px 0px;
+	padding: 0;
+}
+
+.macys-nav-accordion ul li {
+		/*padding: 1px 0; // removing to help reduce space in MDD */
+		margin: 0;
+		list-style: none;
+}
+
+.macys-accordion-header {
+  vertical-align: middle;
+  line-height: 28px;
+  height: 27px;
+  padding: 0 0 0 10px;
+  margin: 1px 4px 1px 4px;
+  color: $black;
+  cursor: pointer;
+  font-size: 12px;
+  border: 1px solid $gray60;
+  background: $gray80;
+}
+
+.macys-accordion-header:hover {
+		background: $gray85;
+	}
+
+.macys-accordion-header span::before {
+  margin: 0 8px 0 0;
+  font-size: 19px;
+  font-family: "macys-tile";
+  content: "\e010";
+  width: 15px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  float: right;
+  color: $gray40;
+}
+
+.macys-accordion-expanded .macys-accordion-header span::before {
+  content: "\e007";
+}
+
+.macys-accordion-content {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.macys-accordion-expanded .macys-accordion-content {
+  margin: 0;
+  display: block;
+  border-right:0;
+}
+
+.macys-accordion-expanded .macys-accordion-content .macys-accordion-active {
+  @include border($gray60);
+  position: relative;
+  left: 1px;
+  background-color: $gray95;
+  border-right: 0;
+}
+.macys-subnav-area {
+  display: none;
+  top: 158px;
+  left: 208px;
+}
+
+
+/* !!!! NAVIGATE Mega-dropdown !!! */
+#macys-navigation {
+  @include border($gray40);
+  border-top: 35px solid $primary-color;
+  border-bottom: 5px solid $primary-color;
+  min-height:500px;
+  background-color: $gray95;
+  padding:0;  /* override from defaults for other areas */
+}
+
+.macys-subnav-menu {
+  z-index: 2;
+  margin-left: 200px;
+  background-color: $white;
+  color: $black;
+  width: 750px;
+  margin: 5px;
+  min-height: 500px;
+}
+
+.macys-subnav-links li {
+  padding: 2px 0;
+}
+
+.macys-subnav-title {
+  margin-left: 3px;
+  text-transform: uppercase;
+  padding: 3px;
+  cursor: pointer;
+  @include border(transparent);
+  font-size: 9px;
+}
+
+.macys-subnav-title span {
+  padding-left: 5px;
+}
+.macys-accordion-expanded .macys-accordion-content .macys-accordion-active.macys-subnav-title span {
+  padding-left: 4px;
+}
+
+/* ==========================================================================
+	Favorites
+========================================================================== */
+#addfavbottom {
+  position: relative;
+  top: -20px;
+  left:3px;
+}
+
+/*=== "Add this page" ===*/
+a[id$=_lbAddLink], a[id$=_lbAddLink]:visited, a[id$=_lbAddLink]:link, a[id$=_lbAddLink]:active {
+  position: relative;
+  top: 100px; left:110px;
+  padding: 3px 5px;
+  @include border();
+  text-decoration: none;
+  color: $white;
+  background-color: $primary-color;
+}
+
+/* ------------------------
+Close Button
+------------------------------ */
+
+.macys-button {
+	line-height: 18px;
+	cursor: pointer;
+	vertical-align: middle;
+	min-width: 25px;
+	height: 30px;
+	padding: 5px;
+}
+
+.macys-button-close {
+	position: absolute;
+	right: 3px;
+	top: 2px;
+	color: $gray90;
+}
+
+#macys-navigation .macys-button-close {
+	right: 10px;
+}
+
+.macys-button-close::before,
+.macys-button-close:before {
+  font-family: 'macys-tile',serif;
+  font-size: 28px;
+  content: "\e902";
+}
+
+.macys-button-close:hover {
+   color:$white;
+}
+#macys-subnav-content-area { min-height:500px; }
+
+#macys-thissite {
+  height:auto;
+  min-height:500px;
+}
+
+#macys-thissite ul {
+  width:96%;display:block; margin-left:0;
+}
+
+#macys-thissite a, #macys-subnav-content-area a:visited, #macys-subnav-content-area a:link, #macys-subnav-content-area a {
+  color:$primary-color;text-decoration:none;
+}
+
+#macys-thissite li {
+  display:block; width:100%;  margin:0 0 20px 0; vertical-align:top;
+}
+
+#macys-thissite li a {
+  display:block;
+  border-bottom:1px solid $primary-color; width:100%;
+  padding-left:5px;font-size:1.1em;
+  background-color:$gray90;
+}
+
+#macys-thissite li a.popout.level2  {color:$black }
+
+#macys-thissite li a[href].popout.level2  {color:$primary-color }
+
+#macys-thissite li ul { list-style: square outside none !important; }
+
+#macys-thissite li ul li {
+  background: url('/_layouts/IMAGES/selectednavbullet.gif') 0 2px no-repeat;
+  padding-left:5px; display:inline-block; border:0;
+  width:167px; margin:5px;
+  font-size:0.9em;line-height:1.1; vertical-align:top;
+}
+
+#macys-thissite li ul li a {
+  padding:3px 5px; display:inline-block; border:0;background:transparent; overflow:hidden;  color:$black !important; margin:0 0 0 1px;
+}
+
+#macys-thissite li ul li a:hover {
+  background-color:$gray90; color:$black; text-decoration:underline;
+}
+
+
+/* SECONDARY NAVIGATION MEGA-DROPDOWN HTML */
+
+.macys-bu-nav-header {
+		padding: 9px;
+		font-size: 1.2em;
+		margin-bottom: 20px;
+		background-color: #efefef;
+		margin-bottom: 20px;
+		border-bottom: 2px solid #a41214;
+}
+
+.macys-bu-nav-heading {
+		font-size: 1.1em;
+		font-weight: bold;
+}
+
+
+/* wrapper div for all columns  Nicks crap */
+.macys-mdd-allcols {
+	display: table;
+	margin: 0;
+	padding: 0;
+}
+
+.macys-mdd-allcols li {
+	padding: 1px 0 2px 0;
+	margin-left: -18px;
+	font-size: $fontsize;
+}
+.macys-mdd-allcols li:last-child {
+	border-bottom: none;
+}
+
+.macys-mdd-allcols li,
+.macys-mdd-allcols li:link {
+	text-decoration: none;
+}
+.macys-mdd-allcols li:visited {
+	text-decoration: none;
+}
+.macys-mdd-allcols li:hover {
+	color: $primary-color;
+	text-decoration: underline;
+}
+	.macys-mdd-allcols li:hover img {
+		text-decoration: none;
+	}
+.macys-mdd-allcols li:active {
+	text-decoration: none;
+}
+
+/* grouping description style */
+
+.macys-mdd-allcols p {
+	margin: 0;
+}
+
+/* grouping header h2 style */
+
+.macys-mdd-allcols h2 {
+	margin-bottom: 5px;
+	font-size: $fontsize +2px;
+	color: $gray50;
+	font-weight: bold;
+	}
+	.macys-mdd-allcols h2 a,
+	.macys-mdd-allcols h2 a:link {
+		text-decoration: underline;
+		font-family: $fontfamily;
+	}
+/* number of columns: 1, 2, 3, 4 or 5? */
+.macys-mdd-allcols .macys-mdd-1cols,
+.macys-mdd-allcols .macys-mdd-2cols,
+.macys-mdd-allcols .macys-mdd-3cols,
+.macys-mdd-allcols .macys-mdd-4cols,
+.macys-mdd-allcols .macys-mdd-5cols {
+	display: table-cell;
+	height: 100%;
+	/* border: 1px solid #dbdbdb; */
+	padding: 0 20px;
+	vertical-align: top;
+}
+.macys-mdd-allcols .macys-mdd-1cols:first-child,
+.macys-mdd-allcols .macys-mdd-2cols:first-child,
+.macys-mdd-allcols .macys-mdd-3cols:first-child,
+.macys-mdd-allcols .macys-mdd-4cols:first-child,
+.macys-mdd-allcols .macys-mdd-5cols:first-child {
+	margin-left: -20px;
+}
+
+.macys-mdd-allcols .macys-mdd-1cols:last-child,
+.macys-mdd-allcols .macys-mdd-2cols:last-child,
+.macys-mdd-allcols .macys-mdd-3cols:last-child,
+.macys-mdd-allcols .macys-mdd-4cols:last-child,
+.macys-mdd-allcols .macys-mdd-5cols:last-child {
+	margin-right: -30px;
+}
+.macys-mdd-allcols .macys-mdd-1cols {
+	width: 100%;
+}
+.macys-mdd-allcols .macys-mdd-2cols {
+	width: 50%;
+}
+.macys-mdd-allcols .macys-mdd-3cols {
+	width: 33.3%;
+}
+.macys-mdd-allcols .macys-mdd-4cols {
+	width: 25%;
+}
+.macys-mdd-allcols .macys-mdd-5cols {
+	width: 20%;
+}
+
+.macys-mdd-feature {
+	border: 1px solid $gray85;
+	padding: 20px 20px 26px 20px;
+	background-color: $white;
+}
+
+
+.macys-sideicon {
+	display: table-cell;
+	padding: 0 10px 10px;
+	text-align: middle;
+	vertical-align: top;
+	font-size: $fontsize+30;
+	color: $gray50;
+	margin-bottom: 15px;
+}
+.macys-sidetext {
+	display: table-cell;
+	padding: 0 10px;
+	width: 100%;
+	vertical-align: top;
+	margin-bottom: 15px;
+}
+
+
+
+/* LIST STYLING */
+
+/* Unordered list styles for the mega-dropdown */
+
+.link-item {
+	padding: 5px 0 5px 10px;
+	list-style-type: none;
+	font-weight: normal;
+	line-height: 1.33;
+}
+	.link-item:hover {
+		background-color: $gray95;
+	}
+
+#macys-centers .link-item,
+#macys-initiatives .link-item  {
+	padding: 10px;
+	border-bottom: 1px dotted $gray95;
+	list-style-type: none;
+	line-height: 1.33;
+	background-image: none !important;
+}
+
+.item {
+	padding: 0;
+	line-height: 1.33;
+}
+.macys-menu ul li:last-child {
+	margin-bottom: 10px;
+}
+
+.link-item .description {
+	color: $gray60;
+	font-weight: normal;
+	font-size: $fontsize -1px;
+	padding-left: 1px;
+	padding-right: 10px;
+	margin-top: 4px;
+}
+
+.bulletlist li {
+	background-image: url("/_layouts/15/images/mymacys2013/bullet-grey.png");
+	background-repeat: no-repeat;
+	background-position: 4px 11px;
+	padding: 0px 0px 3px 19px;
+	font-size: $fontsize;
+	list-style-type: none;
+	font-weight: normal;
+}
+.bulletlist li a {
+	text-decoration: underline;
+}
+.dfwp-list .link-item, .ms-itm {
+	list-style-type: none;
+	border-bottom: 1px dotted $gray95;
+	padding: 5px 0 0 10px;
+}
+
+/* Unordered list styles for the mega-dropdown */
+
+#linkitem a, #linkitem a:link, .dfwp-list LI a, .dfwp-list LI a:link, .item.link-item a, .item.link-item:link , .dfwp-list .link-item a, .dfwp-list .link-item a:link {
+	color: $gray40;
+	text-decoration: none;
+	font-size: $fontsize;
+}
+#linkitem a:active, .dfwp-list LI a:active, .item.active-item a:active, .dfwp-list .active-item a:active {
+	color: $gray30;
+	text-decoration: underline;
+}
+#linkitem a:visited, .dfwp-list LI a:visited, .item.active-item a:visited, .dfwp-list .active-item a:visited {
+	color: $primary-color;
+	text-decoration: none;
+}
+#linkitem:hover a, .dfwp-list LI:hover a, .item.link-item:hover a, .dfwp-list .link-item:hover a {
+	color: lighten($primary-color,10%);
+	text-decoration: underline;
+}
+
+/* Row separator */
+.line-horizontal {
+	height: 1px;
+	width: 100%;
+	background-color: $gray60;
+}
+/* Column separator */
+.line-vertical {
+	height: 100%;
+	width: 1px;
+	background-color: $gray60;
+}
+
+.macys-image-caption {
+	font-size: .7em;
+	font-style: italic;
+	margin-left: 10px;
+	margin-top: -3px;
+}
+.macys-image {
+	margin: 5px;
+	padding: 15px;
+	border: 1px solid $gray85;
+}
+.fb-like-box {
+	background:$gray95;
+	width:75px;
+	height:150px;
+	padding:15px;
+	border:solid 1px $gray80;
+	text-align: center;
+
+}
+.fb-like-box .macys-tile-icon {
+	font-size: 3em;
+	color: $gray40;
+	margin: 0 0 5px 0;
+	float: left;
+}
+.fb-like-box .macys-title-header-card {
+	font-size: .9em;
+	float: left;
+}
+.article-area p a, .article-area li a, blockquote a {
+	text-decoration: underline;
+}
+
+
+}

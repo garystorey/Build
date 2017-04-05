@@ -1,0 +1,119 @@
+.macys-header {
+  background-color: $gray10;
+  position:fixed;
+  width:100%;
+  min-width:100%;
+  height:50px;
+  display:block;
+  box-sizing:border-box;
+}
+.macys-header.at-top{
+  background-color: $gray10;
+}
+
+.macys-header-button  {
+  color: $white;
+  background-color: $primary-color;
+  font-size: 11px;
+  height: 50px;
+  margin: 0;
+  display: inline-block;
+  width: 65px;
+  text-align: center;
+  z-index:3;
+  cursor:hand;
+  cursor:pointer;
+}
+
+.macys-header-button-menu { position:absolute; top:0;left:0; }
+.macys-header-button-search { position:absolute; top:0;right:0; }
+
+.macys-header-button-menu .macys-icon {
+  font-size: 43px;
+  margin-top: -4px;
+}
+
+.macys-header-button-search .macys-icon {
+  margin-top: 5px;
+  font-size: 26px;
+}
+
+.macys-header-button-text {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+}
+.macys-header-button-menu .macys-header-button-text {
+  margin-top: -7px;
+}
+.macys-header-button-search .macys-header-button-text {
+  margin-top: 2px;
+}
+
+.macys-header-logo {
+  position:relative;top:-5px;
+  width:135px;
+
+}
+
+.mymacyslogo {
+  margin:0 auto;
+  display:block;
+  width:132px;
+}
+
+.macys-content {
+
+}
+
+
+// Back To Top
+.macys-backtotop {
+  float:right; margin-right:10px;
+  height:45px;
+  background-color: $primary-color;
+}
+
+.macys-backtotop a,.macys-backtotop a:active,.macys-backtotop a:visited {
+  color: $white;
+  line-height: 3.1;
+  padding: 5px 20px;
+}
+.macys-backtotop a:hover {
+  text-decoration: none;
+}
+
+//Macys Footer
+
+.macys-footer {
+  height:130px;
+  background-color: $gray10;
+  padding: 20px 5px;
+}
+.macys-footer a, .macys-footer a:active, .macys-footer a:hover, .macys-footer a:visited {
+  text-decoration:none;
+  color:$white;
+  margin-top:10px;
+}
+
+.macys-footer-view-desktop {
+  text-align: center;
+
+}
+.macys-footer-view-desktop a {
+  border-bottom: 1px solid $white;
+  font-size:14px;
+  margin-top:20px;
+}
+.macys-footer-links { text-align:center;padding:20px;}
+.macys-footer-links-list {
+  margin:0;padding:0;list-style:none;
+}
+.macys-footer-links-list li { display:inline-block; color:$white; }
+.macys-footer-links-list a { color:$white; font-size: 16px; }
+
+.macys-footer-notice {
+  color:$white;
+  padding:20px;
+}
+.macys-footer-copyright { text-align:center; }

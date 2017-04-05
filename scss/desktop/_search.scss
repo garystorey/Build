@@ -1,0 +1,257 @@
+
+@if ($branding != 'MacysPartners') {
+
+
+.ms-srch-siteSearchResults {
+	width: 100%;
+}
+
+.ms-srch-item-link {
+
+	font-weight: bold;
+	font-size: 12pt;
+	line-height: 1;
+
+}
+
+.ms-srch-item-path {
+	color: $gray50;
+}
+
+.ms-srch-siteSearchResults {
+	padding-top: 15px;
+}
+
+.ms-srch-item-icon {
+
+	display:none;
+}
+
+
+// Search Results Hover Colors
+.ms-srch-item:hover, .ms-srch-resultHover:hover, .edisc-SearchResultItemContainer:hover{
+	background-color: $gray95;
+}
+
+
+// Search Results Slider and Bargraph Colors
+.ajax__multi_slider_default .inner_rail_horizontal {
+	background-color: $primary-color;
+	border-top: 1px solid $primary-color;
+	border-bottom: 1px solid $primary-color;
+}
+
+
+.slider_tick_active{
+	background-color: $lightred;
+	border: 1px solid $lightred;
+}
+
+.histogram_bar_active, .histogram_bar_inactive{
+	background-color: $gray80;
+	border-left: 1px solid $gray80;
+	border-right: 1px solid $gray80;
+	border-top: 2px solid $primary-color;
+}
+
+.histogram_bar_active:hover, .histogram_bar_inactive:hover{
+	background-color: $gray90;
+	border-left: 1px solid $gray90;
+	border-right: 1px solid $gray90;
+	border-top: 2px solid $lightred;
+}
+
+
+//Left Nav HoverState Color
+.ms-ref-refiner #Value > a:hover, .ms-ref-unsel-toggle:hover{
+	color:$primary-color;
+}
+
+.ms-ref-ctrl .ms-ref-selSec .ms-ref-filterSel, .ms-ref-ctrl .ms-ref-allSec .ms-ref-filterSel{
+	color: $primary-color;
+}
+//Search Results Pagination
+.ms-srch-result #Paging a:hover{
+	color: $lightred;
+}
+
+.ms-srch-result #PagingSelf a {
+	color: $primary-color;
+}
+
+
+//Prev and Next Search Arrow Positioning
+.ms-srch-pagingPrev {
+position: absolute;
+left: -62px;
+top: -79px;
+	&:hover{
+		position: absolute;
+		left: -62px;
+		top: -79px;
+	}
+}
+
+.ms-srch-pagingNext {
+position: absolute;
+left: -110px;
+top: -5px;
+	&:hover{
+		position: absolute;
+		left: -110px;
+		top: -5px;
+	}
+}
+
+// Prev and Next Search Arrow Hover Positioning
+.ms-promlink-button-enabled:hover .ms-srch-pagingNext{
+	left: -80px;
+	top: -79px;
+}
+
+.ms-promlink-button-enabled:hover .ms-srch-pagingPrev{
+	left: -42px;
+	top: -83px;
+}
+.ms-promlink-button-enabled-hover, .ms-promlink-button-enabled:hover {
+	border-color: $gray80;
+	background-color: $gray95;
+}
+
+
+//Search Scope in Navigation Styles
+
+.ms-srchnav-link:hover, .ms-srchnav-link-selected:hover
+{
+	color: $primary-color;
+}
+
+
+.ms-srchnav-link-selected:link, .ms-srchnav-link-selected:visited
+{
+	color: $primary-color;
+}
+
+
+//People Search Results
+
+.ms-srch-people-item #ContactInfo
+{
+	padding-left: 14px;
+	padding-bottom: 0px;
+
+}
+
+.ms-srch-people-item #UserInfoContainer
+{
+	float: left;
+	width: 454px;
+	overflow: hidden;
+	margin-left: 75px;
+	margin-top: -70px;
+}
+
+.ms-srch-people-item #UserPersonaContainer
+{
+	width: 85px;
+}
+
+//Search Box that Appears above "Add an App"
+
+.ms-InlineSearch-Outline-Empty  // search box outline
+{
+	height: 30px;
+	width: 188px;
+}
+.ms-InlineSearch-Outline-Focused //search box outline on hover
+{
+	height: 30px;
+	width: 188px;
+}
+
+.ms-InlineSearch-Outline-Baseline  //search box outline on page focus
+{
+	height: 30px;
+	width: 188px;
+}
+
+//add an app search page pagination arrows
+
+.ms-promlink-button-right
+{
+	left: -204px;
+	top: -232px;
+	position: absolute;
+}
+
+.ms-promlink-button-right-hover
+{
+	left: -168px;
+	top: -236px;
+	position: absolute;
+}
+
+.ms-promlink-button-left-hover
+{
+	left: -132px;
+	top: -236px;
+	position: absolute;
+}
+
+.ms-promlink-button-left
+{
+	left: -132px;
+	top: -236px;
+	position: absolute;
+}
+
+
+//Media Queries associated with Search
+
+@media ( max-width: 680px ) {
+
+ 	.ms-srch-siteSearchResults {
+		width: 100%;
+	}
+
+	.ms-srch-item {
+		width: 100%;
+	}
+
+	.ms-srch-item-link {
+
+		font-weight: bold;
+		font-size: 12pt;
+		line-height: 1;
+	}
+
+	.ms-srch-item-path {
+		color: $gray50;
+	}
+}
+
+/* SEARCH STYLE FIXES */
+
+/* Search link hover color */
+.ms-srch-resultFooter a:hover {
+color: $primary-color;
+text-decoration: none;
+}
+/* Fixes search field web part look */
+#SearchBox {
+	white-space: nowrap;
+}
+.ms-srch-sbLarge>input {
+	margin: 1px 1px 0px 1px;
+	padding: 0px 0px 0px 6px;
+	vertical-align: middle;
+	font-size: $fontsize;
+	width: auto;
+}
+.ms-srch-sbLarge {
+	white-space: nowrap;
+}
+
+
+
+}

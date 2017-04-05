@@ -1,0 +1,785 @@
+
+@if ($branding != 'MacysPartners') {
+
+
+    /*	HEADER: Main Navigation
+	------------------------------------------------------------------------- */
+    .macys-header {
+        box-sizing: border-box;
+        background-color: $gray10;
+        min-width: 840px !important;
+        user-select: none;
+    }
+    .macys-header-top {
+        background-color: $gray20;
+        position: relative;
+        height: 49px;
+    }
+    .macys-header-logo {
+        margin-top: 6px;
+    }
+    .macys-header-top-row {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: $white;
+    }
+    .macys-header-top-row>li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        vertical-align: top;
+    }
+    .macys-header-top-row>li:nth-of-type(1) {
+        width: 280px;
+    }
+    .macys-header-top-row>li:nth-of-type(2) {
+        width: calc(100% - 500px);
+    }
+    .macys-header-top-row>li:nth-of-type(3) {
+        width: 220px;
+    }
+    .macys-header-top-cell {
+        vertical-align: top;
+    }
+    /* Header Image */
+    .macys-header-user {
+        box-sizing: border-box;
+        vertical-align: top;
+    }
+    .macys-ribbonNav {
+        cursor: pointer;
+        position: relative;
+        top: 3px;
+        text-transform: uppercase;
+        font-size: 11px;
+        padding: 2px 5px;
+    }
+    #macys-onedrive {
+        right: 70px;
+    }
+    #macys-o365 {
+        right: 75px;
+    }
+    #macys-osites {
+        right: 80px;
+    }
+    #macys-yammer {
+        right: 85px;
+    }
+    .macys-ribbonNav:hover {
+        background-color: $white;
+        color: $black;
+    }
+
+    /* SEARCH */
+    .macys-header-search {
+        position: relative;
+        top: 5px;
+        width: 600px;
+        margin: 0 auto;
+    }
+    #macysSearch .macys-search-scopes {
+        background: transparent !important;
+        background-color: $gray95 !important;
+        padding: 5px;
+        color: $gray20 !important;
+        border: 0 !important;
+        border-right: 1px solid $gray85 !important;
+        height: 29px !important;
+        width: 130px;
+        margin-right: 0;
+        border-radius: .3em 0 0 .3em;
+        font-family: inherit!important;
+        height: 29px !important;
+        position: relative;
+        top: 1px;
+        font-family: inherit;
+        outline: none;
+        user-select: all;
+    }
+    .ie .macys-search-scopes {
+        height: 29.4px;
+        top: 1px;
+    }
+    .macys-search-scopes:focus {
+        outline: none;
+    }
+    .macys-search-input {
+        height: 29px;
+        width: 300px;
+        font-size: 15px;
+        margin: 0;
+        position: relative;
+        left: -5px;
+        top: 1px;
+        padding: 1px 8px 2px 8px;
+        border: 0 !important;
+        outline: 0;
+        font-family: inherit;
+    }
+    .macys-search-input:focus {
+        outline: none;
+    }
+    .macys-search-input::-webkit-input-placeholder {
+        color: $gray80;
+    }
+    .macys-search-input:focus::-webkit-input-placeholder {
+        transition: opacity .5s 1s ease;
+        opacity: 0;
+    }
+    .macys-search-input::-moz-placeholder {
+        color: $gray80;
+        opacity: 1;
+    }
+    .macys-search-input:focus::-moz-placeholder {
+        transition: opacity .5s 1s ease;
+        opacity: 0;
+    }
+    .macys-search-input:-moz-placeholder {
+        color: $gray80;
+        opacity: 1;
+    }
+    .macys-search-input:focus:-moz-placeholder {
+        transition: opacity .5s 1s ease;
+        opacity: 0;
+    }
+    .macys-search-input:-ms-input-placeholder {
+        color: $gray80 !important;
+    }
+    .macys-search-btn {
+        background-color: $primary-color;
+        color: $white;
+        position: relative;
+        left: -9px;
+        top: 4px;
+        height: 30px;
+        line-height: 32px;
+        text-align: center;
+        width: 45px;
+        display: inline-block;
+        border: 0 !important;
+        border-radius: 0 .3em .3em 0;
+        cursor: pointer;
+    }
+    .macys-search-btn:before {
+        content: '\e004';
+        position: relative;
+        color: $white;
+        font-family: 'macys-tile',serif;
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+    }
+    /* MAIN NAV */
+    .macys-header-bottom {
+        background-color: $gray10;
+    }
+    .macys-header-bottom-row {
+        height: 41px;
+    }
+    .macys-header-nav-area {
+        display: inline-block;
+        margin-left: -4px;
+        width: 11%;
+        padding: 0;
+        cursor: pointer;
+        white-space: nowrap;
+        border-right: 1px solid $gray20;
+        height: 41px;
+        min-height: 41px;
+        max-height: 41px;
+        position: relative;
+    }
+    #nav-help.macys-header-nav-area {
+        border-right: 0;
+    }
+    #nav-news.macys-header-nav-area {
+        width: 9%;
+    }
+    #nav-businessunits.macys-header-nav-area {
+        width: 13%;
+    }
+    .macys-header-nav-badge {
+        color: $gray85;
+        background-color: $primary-color;
+        border: 2px solid $gray80;
+        border-radius: 45%;
+        padding: 1px 4px 1px 3px;
+        font-weight: bold;
+        line-height: 13px;
+        position: absolute;
+        font-size: 12px;
+        top: -6px;
+        right: 2px;
+        display: none;
+    }
+    .macys-header-nav-link {
+        max-width: 185px;
+        margin: 0 auto;
+        height: 35px;
+        max-height: 35px;
+        min-height: 35px;
+        padding-top: 4px;
+    }
+    .macys-header-nav-text {
+        margin-top: 2px;
+    }
+    .macys-header-icon {
+        font-family: 'macys-tile',serif;
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: $gray70;
+    }
+    .macys-header-icon::before {
+        content: '\e007';
+    }
+    .macys-header-nav-verb {
+        text-transform: capitalize;
+        font-size: 12px;
+        line-height: 1;
+        color: $gray70;
+    }
+    .macys-header-nav-noun {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $gray85;
+        font-weight: bold;
+    }
+    .macys-header-nav-icon {
+        display: none;
+    }
+    .macys-header-nav-icon:before {
+        font-family: 'macys-tile',serif;
+        font-size: 23px;
+        content: '\e001';
+        color: $gray70;
+        float: left;
+        padding-right: 8px;
+        margin-top: -4px;
+    }
+    #nav-businessunits .macys-header-nav-icon:before {
+        content: '\e006';
+    }
+    #nav-thissite .macys-header-nav-icon:before {
+        content: '\e601';
+        font-size: 21px;
+        margin-top: -2px;
+    }
+    #nav-favorites .macys-header-nav-icon:before {
+        content: '\e005';
+        font-size: 21px;
+        margin-top: -2px;
+    }
+    #nav-onemacys .macys-header-nav-icon:before {
+        content: '\e012';
+        font-size: 24px;
+    }
+    #nav-news .macys-header-nav-icon:before {
+        content: '\e001';
+        font-size: 20px;
+        margin-top: -3px;
+    }
+    #nav-myinsite .macys-header-nav-icon:before {
+        content: '\e003';
+        font-size: 20px;
+        margin-top: -3px;
+    }
+    #nav-centers .macys-header-nav-icon:before {
+        content: '\e002';
+    }
+    #nav-initiatives .macys-header-nav-icon:before {
+        content: '\e602';
+        font-size: 19px;
+        margin-top: -1px;
+    }
+    #nav-help .macys-header-nav-icon:before {
+        content: '\e619';
+        font-size: 19px;
+        margin-top: -1px;
+    }
+    .macys-header-nav-area:hover .macys-header-nav-icon:before,
+    .macys-header-nav-area:hover .macys-header-nav-verb,
+    .macys-header-nav-area:hover .macys-header-nav-noun,
+    .macys-header-nav-area:hover .macys-header-icon:before {
+        color: $white;
+    }
+    .macys-header-nav-area.is-selected .macys-header-icon::before {
+        content: "\e00f";
+    }
+    .macys-header-nav-area.is-selected .macys-header-nav-icon:before,
+    .macys-header-nav-area.is-selected .macys-header-icon:before,
+    .macys-header-nav-area.is-selected,
+    .macys-header-nav-area.is-selected .macys-header-nav-verb,
+    .macys-header-nav-area.is-selected .macys-header-nav-noun {
+        background-color: $primary-color;
+        color: $white;
+    }
+    .macys-header-nav-area.is-selected:hover .macys-header-nav-icon:before,
+    .macys-header-nav-area.is-selected:hover .macys-header-icon:before,
+    .macys-header-nav-area.is-selected:hover,
+    .macys-header-nav-area.is-selected:hover .macys-header-nav-verb,
+    .macys-header-nav-area.is-selected:hover .macys-header-nav-noun {
+        background-color: $primary-color;
+        color: $white;
+    }
+    @media (max-width:900px) {
+        #welcomeMenuBox {
+            right: 115px;
+        }
+        #suiteBarButtons {
+            right: 100px;
+        }
+        .macys-search-input {
+            width: 235px;
+        }
+        .macys-search-scopes {
+            width: 100px;
+            display: inline-block;
+        }
+        .macys-header-search {
+            width: 420px;
+        }
+    }
+    @media (max-width:950px) {
+        .macys-header-nav-link {
+            width: 100%;
+            padding-left: 5px;
+        }
+        .macys-header-nav-text {
+            padding-left: 5px;
+        }
+        .macys-header-nav-verb {
+            font-size: 10px;
+        }
+        .macys-header-nav-noun {
+            font-size: 12px;
+        }
+    }
+    @media (min-width:951px) and (max-width:1150px) {
+        .macys-header-nav-link {
+            width: 100%
+        }
+        .macys-header-nav-text {
+            padding-left: 10px;
+        }
+        .macys-header-nav-verb {
+            font-size: 10px;
+        }
+        .macys-header-nav-noun {
+            font-size: 12px;
+        }
+    }
+    @media (min-width:1151px) and (max-width:1310px) {
+        .macys-header-nav-text {
+            padding-left: 20px;
+        }
+        .macys-search-input {
+            width: 265px;
+        }
+    }
+    @media (min-width:1310px) {
+        .macys-header-nav-icon {
+            display: block;
+        }
+        .macys-header-nav-area {
+            padding: 0 20px;
+        }
+    }
+    /* Breadcrumb and Page Title */
+    .macys-breadcrumb {
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .ms-breadcrumb-dropdownBox {
+        position: relative;
+        top: -5px;
+    }
+    .ms-breadcrumb-anchor {
+        position: static !important;
+    }
+    #GlobalBreadCrumbNavPopout-anchor {
+        height: 13px !important;
+    }
+    .macys-menu {
+        display: none;
+    }
+    .macys-menu .link-item {
+        font-weight: normal;
+    }
+    .macys-menu .large,
+    .groupheader {
+        font-weight: bold;
+        font-size: $fontsize+3;
+        color: $gray40;
+    }
+    .macys-menu .medium {
+        font-weight: bold;
+        font-size: $fontsize+3;
+    }
+    .macys-area-seperator {
+        min-height: 16px;
+    }
+    /* Fixes IE image clipping of page info icon */
+    #ms-pageDescriptionImage {
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+    #ms-pageDescriptionDiv {
+        margin-top: 3px;
+        margin-bottom: -4px;
+    }
+    div[id$=_TopNavigationMenuV4] {
+        margin-left: 220px;
+    }
+    .macys-menu a[href^='http://']:after,
+    .macys-menu a[href^='https://']:after  {
+        content: url($externalicon);
+        border: none;
+        margin-left: 3px;
+        white-space: nowrap;
+    }
+    .macys-menu a,
+    .macys-menu a:link,
+    .macys-menu a:visited,
+    .macys-menu a:hover,
+    .macys-menu a:active {
+        text-decoration: none;
+    }
+    .macys-menu .bannerimage {
+        margin: 20px 0 10px 0;
+        border: none;
+    }
+    .macys-menu .macys-tile-container a[href^='http://']:after,
+    .macys-menu .macys-tile-container a[href^='https://']:after {
+        content: '';
+    }
+    /* expand collapse left nav
+
+li.leftnav-parent-li::before {
+    position: relative;
+    top: 25px;
+    left: 5px;
+    font-family: macys;
+    content: "\e010";
+}
+li.leftnav-parent-li.leftnav-open::before {
+    position: relative;
+    top: 25px;
+    left: 5px;
+    font-family: macys;
+    content: "\e007";
+}
+#zz15_RootAspMenu li ul {opacity:0; visibility:hidden; transition: 0.6s; position:absolute; top:-9999px;}
+#zz15_RootAspMenu li:hover ul { opacity:1; visibility:visible;position:static;transition: 0.6s; }
+
+*/
+    /* MICROSOFT NAVIGATION OVERRIDES */
+    #s4-ribbonrow {
+        user-select: none;
+    }
+    #globalNavBox {
+        background-color: $gray30;
+    }
+    .ms-fullscreenmode .macys-header {
+        display: none;
+    }
+    .ms-cui-topBar2 {
+        border: 0 !important;
+    }
+    .ms-cui-TabRowRight {
+        position: relative;
+        top: -4px;
+        color: $gray90;
+    }
+    #s4-ribbonrow .ms-promotedActionButton-text {
+        color: $gray90;
+    }
+    .ms-promotedActionButton-text:hover {
+        color: $gray90 !important;
+        outline: none;
+    }
+    #s4-ribbonrow .ms-cui-tt-span {
+        color: $gray90 !important;
+        outline: none;
+    }
+    #s4-ribbonrow .ms-cui-tt-s .ms-cui-tt-span {
+        color: $gray50 !important;
+        outline: none;
+    }
+    #s4-ribbonrow .ms-cui-tt-s .ms-cui-tt-a:hover .ms-cui-tt-span {
+        color: $gray50 !important;
+    }
+    #s4-ribbonrow .ms-cui-tts .ms-cui-tt-a:hover .ms-cui-tt-span {
+        color: $gray50 !important;
+    }
+    #s4-ribbonrow .ms-browseTab.ms-cui-tt-s .ms-cui-tt-span {
+        color: $gray90 !important;
+        outline: none;
+    }
+    #welcomeMenuBox {
+        position: absolute;
+        top: 2px;
+        right: 70px;
+        height: 32px;
+        outline: none;
+        margin: 0;
+    }
+    #welcomeMenuBox:hover {
+        background-color: transparent !important;
+        color: transparent !important;
+        border: 0 !important;
+        outline: none;
+    }
+    .ms-welcome-root {
+        height: 47px;
+    }
+    #zz13_Menu>img,
+    #zz12_Menu>img,
+    #zz6_Menu>img {
+        position: relative;
+        top: 4px;
+        left: 1px;
+        border-radius: 4px;
+    }
+    #zz13_Menu,
+    #zz12_Menu,
+    #zz6_Menu {
+        color: $gray60;
+    }
+    #zz7_SiteActionsMenu_t {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 1px;
+        outline: none;
+    }
+    #zz7_SiteActionsMenu_t:hover {
+        outline: none;
+    }
+    #suiteBar {
+        height: auto;
+        display: block;
+    }
+    #suiteBarLeft,
+    #suiteBarRight {
+        display: none;
+    }
+    /* FIX SP GEAR */
+    #suiteBarButtons {
+        position: absolute;
+        top: -8px;
+        right: 55px;
+        outline: none;
+    }
+    .ms-siteactions-imgspan {
+        display: none;
+    }
+    .ms-siteactions-normal {
+        height: 0 !important;
+        width: 30px !important;
+        outline: none;
+    }
+    .ms-siteactions-normal>a {
+        outline: none;
+    }
+    .ms-siteactions-normal>a::before {
+        content: '\e62b'; // gear icon
+        padding: 5px 8px;
+        font-family: 'macys-tile',serif !important;
+        color: #eee; // Icon color
+        font-size: 37px; // Icon size
+        font-weight: normal; // Removes default bolding that can occur with icon font
+    }
+    // Remove OOTB Site Actions hover (appears as underline under icon)
+    .ms-siteactions-normal>a:hover {
+        text-decoration: none;
+        outline: none;
+    }
+    /*
+    // Set gear icon hover color added in case its needed later
+    .ms-siteactions-normal>a:hover:before {
+    }
+    */
+    // Set gear icon "clicked" color
+    .ms-siteactions-hover>a:before {
+        color: $gray40; // Icon color
+        background-color: $white;
+    }
+    /* Remove OOTB Site Actions hover */
+    .ms-siteactions-hover {
+        background: transparent;
+        border-right-color: transparent;
+        outline: none;
+    }
+    li[text="Design Manager"] {
+        display: none;
+    }
+    .ms-core-deltaSuiteBarRight .ms-siteactions-normal>.ms-core-menu-box {
+        top: 57px !important;
+        left: -90px !important;
+    }
+    .macys-header-user .ms-core-menu-box {
+        top: 47px !important;
+    }
+    /* get rid of extra space on s4-titleRow */
+    #s4-titlerow {
+        height: auto;
+        padding: 0 !important;
+    }
+    /* BLOOMIES NAVIGATION OVERRIDES */
+    .bloomies .macys-header-top {
+        background-color: $white !important;
+        background: linear-gradient(to bottom, $white, #f9f9f9) !important;
+    }
+    .bloomies .macys-header-bottom {
+        background-color: $white;
+    }
+    .bloomies .macys-header-nav-link {
+        width: 100%;
+        text-align: center;
+        max-width: 100%;
+    }
+    .bloomies .macys-header-bottom-row {
+        border-top: 1px solid $black;
+        border-bottom: 2px solid $black;
+    }
+    .bloomies .macys-header-nav-area {
+        width: 12.4%;
+    }
+    .bloomies .macys-header-nav-text {
+        margin-left: 0;
+    }
+    .bloomies .macys-header-nav-verb {
+        display: none;
+    }
+    .bloomies .macys-header-nav-noun {
+        color: $black;
+        font-weight: bold;
+        margin-top: 6px;
+    }
+    .bloomies .macys-search-btn {
+        height: 28.5px;
+        top: 5px;
+    }
+    .bloomies .macys-header-nav-icon,
+    .bloomies .macys-header-nav-icon:before {
+        display: none;
+    }
+    .bloomies .macys-header-nav-area:hover .macys-header-nav-icon:before,
+    .bloomies .macys-header-nav-area:hover .macys-header-nav-verb,
+    .bloomies .macys-header-nav-area:hover .macys-header-nav-noun,
+    .bloomies .macys-header-nav-area:hover .macys-header-icon:before {
+        color: $black;
+    }
+    .bloomies .macys-header-nav-area:hover {
+        background-color: rgba(89, 44, 130, .2);
+        border-bottom: 3px solid $black;
+    }
+    .bloomies .macys-header-nav-area.is-selected:hover .macys-header-nav-icon:before,
+    .bloomies .macys-header-nav-area.is-selected:hover .macys-header-icon:before,
+    .bloomies .macys-header-nav-area.is-selected:hover,
+    .bloomies .macys-header-nav-area.is-selected:hover .macys-header-nav-verb,
+    .bloomies .macys-header-nav-area.is-selected:hover .macys-header-nav-noun {
+        background-color: $primary-color;
+        color: $white;
+    }
+    .bloomies #nav-blm-help.macys-header-nav-area {
+        border-right: 0;
+    }
+    .bloomies .macys-search-scopes {
+        background-color: $gray85;
+        border: 1px solid $gray20 !important;
+        border-right-color: $gray85 !important;
+    }
+    .bloomies .macys-search-input {
+        border-top: 1px solid $gray20 !important;
+        border-bottom: 1px solid $gray20 !important;
+        outline: 0;
+        font-family: inherit;
+    }
+    .bloomies .ms-siteactions-normal>a::before {
+        color: $gray50;
+    }
+    @media (max-width:900px) {
+        .bloomies .macys-header-nav-text {
+            margin-left: auto;
+            padding-left: 0;
+        }
+        .bloomies .macys-header-nav-noun {
+            font-size: 10px;
+            margin-top: 9px;
+        }
+        .bloomies .macys-search-input {
+            width: 200px;
+        }
+        .bloomies .macys-header-search {
+            width: 360px;
+            margin-left: 30px;
+        }
+        .bloomies .macys-search-scopes {
+            width: 100px;
+        }
+    }
+    @media (min-width:850px) and (max-width:1075px) {
+        .bloomies .macys-search-input {
+            width: 200px;
+        }
+        .bloomies .macys-header-search {
+            width: 360px;
+            margin-left: 100px;
+        }
+        .bloomies .macys-search-scopes {
+            width: 100px;
+        }
+    }
+    @media (min-width:901px) and (max-width:1140px) {
+        .bloomies .macys-header-nav-text {
+            margin-left: auto;
+            padding-left: 0;
+        }
+        .bloomies .macys-header-nav-noun {
+            font-size: 11px;
+            margin-top: 7px;
+        }
+    }
+    @media (min-width:1141px) and (max-width:1180px) {
+        .bloomies .macys-header-nav-text {
+            margin-left: auto;
+            padding-left: 0;
+        }
+        .bloomies .macys-header-nav-noun {
+            font-size: 14px;
+        }
+    }
+    @media (min-width:1076px) and (max-width:1250px) {
+        .bloomies .macys-search-input {
+            width: 200px;
+        }
+        .bloomies .macys-header-search {
+            width: 420px;
+        }
+    }
+    @media (min-width:1181px) and (max-width:1350px) {
+        .bloomies .macys-header-nav-text {
+            margin-left: auto;
+            padding-left: 0;
+        }
+    }
+
+} @else {
+
+    #pageTitle {display:none;}
+    .systempage #pageTitle { font-size:2.3em;}
+
+}

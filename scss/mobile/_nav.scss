@@ -1,0 +1,191 @@
+.macys-menu {
+	min-height: 100% !important;
+	height: 100% !important;
+	position:relative;
+}
+
+.macys-menu > nav > h2 {
+	font-size: 1.5em;
+	line-height: 1em;
+	font-weight: bold;
+	color: $gray20;
+	padding: 0 !important; /*.4em 0 .4em; */
+	margin:0 !important; /*10px 0 10px 10px;*/
+}
+
+.macys-menu-header {
+	height: 91px;
+	background-color: $gray10;
+	margin:0;
+	padding:10px 0;
+}
+
+.macys-icon-close::before {
+	content :'x';
+	position:absolute; right:-2px;
+	font-family: monospace;
+	color:$white !important;
+	padding: 5px 9px;
+}
+
+.macys-menu-header-user {
+	margin: 10px;
+}
+.macys-menu-header-user, .macys-menu-header-user-info {
+	overflow:hidden; _overflow:visible; zoom:1;
+}
+
+.macys-menu-header-user-pic {
+	min-width: 45px;
+	max-width: 60px;
+	float:left; margin-right: 10px;
+	display:block; border:2px solid $gray50;
+	border-radius: 5px;
+}
+.macys-menu-header-user-info { padding:10px 0; }
+
+.macys-menu-header-name {
+	font-size:14px; font-weight:bold; color:$white;
+}
+.macys-menu-header-title {
+	font-size: 12px; color:$gray90;
+}
+
+
+.macys-close-menu::before {
+	content :'x';
+	font-size: 26px;
+	font-family: monospace;
+	color:$primary-color;
+	position: relative;
+	top: -5px;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+
+
+//PLUGIN CSS
+
+.multilevelpushmenu_wrapper {
+	position: absolute;
+	overflow: hidden;
+	min-width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.multilevelpushmenu_wrapper .levelHolderClass {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	background: $gray90;
+	width: auto;
+	min-height: 100%;
+	font-size: 1em;
+	zoom: 1;
+}
+
+.multilevelpushmenu_wrapper .ltr {
+	margin-left: -100%;
+	left: 0;
+	box-shadow: 5px 0 5px -5px $gray20;
+}
+
+.multilevelpushmenu_wrapper .rtl {
+	margin-right: -100%;
+	right: 0;
+	box-shadow: 5px 0 5px 5px $gray20;
+}
+
+.multilevelpushmenu_wrapper .multilevelpushmenu_inactive {
+	background: $gray80;
+}
+
+.multilevelpushmenu_wrapper li h2 {
+	font-size: 1.5em;
+	line-height: 1em;
+	font-weight: bold;
+	color: $gray20;
+	padding: 0 .4em 0 .4em;
+	margin:10px 0 10px 10px;
+}
+
+.multilevelpushmenu_wrapper ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.multilevelpushmenu_wrapper li {
+	cursor: pointer;
+/*	border-top: 1px solid $gray40; */
+}
+
+.multilevelpushmenu_wrapper li:last-child {
+/*	border-bottom: 1px solid $gray40; */
+}
+
+.multilevelpushmenu_wrapper li:hover {
+	background-color: $gray85;
+}
+
+.multilevelpushmenu_wrapper a {
+	display: block;
+	outline: none;
+	overflow: hidden;
+	font-size: 1.3em;
+	line-height: 1;
+	text-decoration: none;
+	color: $black;
+	padding: .75em;
+	font-family:$fontfamily;
+}
+
+.multilevelpushmenu_wrapper a:hover {}
+
+
+.multilevelpushmenu_wrapper i::before {
+	color: $primary-color;
+	font-family:'macys';
+	margin-right:10px;
+}
+
+.mymacys-icon-question::before { font-family: 'macystile' !important;}
+
+.multilevelpushmenu_wrapper .backItemClass {
+	display: block;
+	padding: .2em .2em .2em .2em;
+	background: $gray80;
+	border-top: 1px solid $gray40;
+}
+
+.multilevelpushmenu_wrapper .floatRight {
+	float: right;
+}
+
+.multilevelpushmenu_wrapper .floatLeft {
+	float: left;
+}
+
+.multilevelpushmenu_wrapper .cursorPointer {
+	cursor: pointer;
+}
+
+.multilevelpushmenu_wrapper .iconSpacing_ltr {
+	padding: 0 .4em 0 0;
+}
+
+.multilevelpushmenu_wrapper .iconSpacing_rtl {
+	padding: 0 0 0 .4em;
+}
+
+
+.multilevelpushmenu_wrapper .fl {
+	float:left;
+}
+
+.multilevelpushmenu_wrapper .fr {
+	float:right;
+}
