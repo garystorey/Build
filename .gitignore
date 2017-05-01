@@ -83,3 +83,11 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+dest
+dest/css
+dest/js
+
+docs
+
+sp.config.js
