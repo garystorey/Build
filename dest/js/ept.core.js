@@ -1137,43 +1137,93 @@ ept.onload('ept.private.daf');
 * @function get
 * @memberof ept.listItem
 * @param {object} obj = JSON object containing the sharepoint siteName, listName and options (optional REST parameters)
-* @returns {object} Returns a jQuery Promise.
 * @example
-*   $.when( ept.listItem.get({
-*               site: "/",
-*               list: "Tasks",
-*               options: '$orderby=Titile asc'
-*            })).done(function() {});
+*   var settings = {
+*         site: '/',
+*         list: 'Tasks',
+*         options: '$orderby=Title asc'
+*   };
+*   $.when( ept.listItem.get(settings) ).done( function(results){ ... } );
+* @returns {object} Returns a jQuery Promise.
 */
+
 
 /**
 * Retrieves a specific item from a Sharepoint List
 * @function getById
 * @memberof ept.listItem
 * @param {object} obj = JSON object containing the sharepoint siteName, listName and options (optional REST parameters)
+* @example
+*   var settings = {
+*         site: '/',
+*         list: 'Tasks',
+*         data: { ID: 123 }
+*   };
+*   $.when( ept.listItem.getById(settings) ).done( function(results){ ... } );
 * @returns {object} Returns a jQuery Promise.
 */
+
+
 /**
 * Adds a new item to a Sharepoint List
 * @function add
 * @memberof ept.listItem
 * @param {object} obj = JSON object containing the sharepoint siteName, listName, options (optional REST parameters) and data (JSON object) containing information for list item.
 * @returns {object} Returns a jQuery Promise.
+* @example
+*   var settings = {
+*         site: '/',
+*         list: 'Tasks',
+*         data: {
+*            Title: 'My Task',
+*            Status: 'In Progress',
+*            DueDate: '09/09/2017'
+*         }
+*   };
+*   $.when( ept.listItem.add(settings) ).done( function(results){ ... } );
+* @returns {object} Returns a jQuery Promise.
 */
+
+
 /**
 * Updates an existing item in a Sharepoint List
 * @function update
 * @memberof ept.listItem
 * @param {object} obj = JSON object containing the sharepoint siteName, listName, options (optional REST parameters) and data (JSON object) containing information for list item.
-* @returns {object} Retuens a jQuery Promise.
+* @example
+*   var settings = {
+*         site: '/',
+*         list: 'Tasks',
+*         data: {
+*            ID: 123,
+*            Title: 'My Task',
+*            Status: 'In Progress',
+*            DueDate: '09/09/2017'
+*         }
+*   };
+*   $.when( ept.listItem.update(settings) ).done( function(results){ ... } );
+* @returns {object} Returns a jQuery Promise.
 */
+
+
 /**
 * Removes a specific item from a Sharepoint List
 * @function delete
 * @memberof ept.listItem
 * @param {object} obj = JSON object containing the sharepoint siteName, listName, options (optional REST parameters) and data (JSON object) containing information for list item.
-* @returns {object} Retuens a jQuery Promise.
+* @example
+*   var settings = {
+*         site: '/',
+*         list: 'Tasks',
+*         data: {
+*            ID: 123,
+*         }
+*   };
+*   $.when( ept.listItem.delete(settings) ).done( function(results){ ... } );
+* @returns {object} Returns a jQuery Promise.
 */
+
+
  ept.listItem = {
     get: getSPListItems,
     getById : getSPListItem,

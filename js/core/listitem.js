@@ -180,7 +180,7 @@
 *   var settings = {
 *         site: '/',
 *         list: 'Tasks',
-*         data : { id: 123 }
+*         data: { ID: 123 }
 *   };
 *   $.when( ept.listItem.getById(settings) ).done( function(results){ ... } );
 * @returns {object} Returns a jQuery Promise.
@@ -197,9 +197,9 @@
 *   var settings = {
 *         site: '/',
 *         list: 'Tasks',
-*         data : {
-*            Title : 'My Task',
-*            Status : 'In Progress',
+*         data: {
+*            Title: 'My Task',
+*            Status: 'In Progress',
 *            DueDate: '09/09/2017'
 *         }
 *   };
@@ -217,10 +217,10 @@
 *   var settings = {
 *         site: '/',
 *         list: 'Tasks',
-*         data : {
-*            ID : 123,
-*            Title : 'My Task',
-*            Status : 'In Progress',
+*         data: {
+*            ID: 123,
+*            Title: 'My Task',
+*            Status: 'In Progress',
 *            DueDate: '09/09/2017'
 *         }
 *   };
@@ -238,8 +238,8 @@
 *   var settings = {
 *         site: '/',
 *         list: 'Tasks',
-*         data : {
-*            ID : 123,
+*         data: {
+*            ID: 123,
 *         }
 *   };
 *   $.when( ept.listItem.delete(settings) ).done( function(results){ ... } );
