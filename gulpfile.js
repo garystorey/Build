@@ -79,7 +79,7 @@ gulp.task('JS-Core', function () {
         .pipe(gp.uglify())
         .pipe(gp.rename(renameOptions))
         .pipe(gulp.dest(cfg.output.js.core.destination))
-        .pipe(gp.shell(['cmd\\copy.cmd ept.core.* '+sp.serverName+' '+sp.driveLetter+' "'+spCopyJSPath+'"']))
+//        .pipe(gp.shell(['cmd\\copy.cmd ept.core.* '+sp.serverName+' '+sp.driveLetter+' "'+spCopyJSPath+'"']))
         .pipe(gp.notify('JS Core file processed successfully.'))
         .pipe(gp.connect.reload());
 });
@@ -100,7 +100,7 @@ gulp.task('JS-Masterpage', function () {
         .pipe(gp.uglify())
         .pipe(gp.rename(renameOptions))
         .pipe(gulp.dest(cfg.output.js.mp.destination))
-        .pipe(gp.shell(['cmd\\copy.cmd ept.masterpage.* '+sp.serverName+' '+sp.driveLetter+' "'+spCopyJSPath+'"']))
+//        .pipe(gp.shell(['cmd\\copy.cmd ept.masterpage.* '+sp.serverName+' '+sp.driveLetter+' "'+spCopyJSPath+'"']))
         .pipe(gp.notify('JS Masterpage file processed successfuly.'))
         .pipe(gp.connect.reload());
 });

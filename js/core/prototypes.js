@@ -28,6 +28,12 @@
     };
   }
 
+  if ( typeof String.prototype.includes !== 'function' ) {
+    String.prototype.includes = function (t) {
+      return this.indexOf(t) > -1;
+    };
+  }
+
   if ( typeof String.prototype.has !== 'function' ) {
     String.prototype.has = function (t) {
       return this.indexOf(t) > -1;
