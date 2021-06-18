@@ -6,7 +6,7 @@
   "author": "Gary Storey",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^3.12.2",
+    "eslint": "^6.6.0",
     "glob": "^4.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^2.0.0",
